@@ -1,0 +1,148 @@
+Title: Python For Loops - Python Tutorial for Absolute Beginners there are times that we may want to
+repeat a task a number of times for example let's say we send a message to a
+user if that message cannot be delivered perhaps we want to retry three times now
+for simplicity let's imagine this print statement is equivalent to sending a
+message in a real work program to send a message to a user we have to write five
+to ten lines of code now if you want to retry three times we don't want to
+repeat all that code that is ugly that's when we use a loop we use loops to
+create repetition so here is how it works we start with four number in we
+have a built-in function called range now how many times we want to
+repeat this task let's say three times so we call range and pass three as an
+argument now similar to our if statements we need to terminate this
+line with a colon enter we get indentation so in this block we can
+write all the statements that should be repeated three times let's do a print a
+message like attempt save the changes run the program so we have attempt
+printed three times beautiful now what is this number let's take a look it's a
+variable of type integer so let's pass it as the second argument to the print
+function number run the program this is what we get zero one two so here we have
+a for loop this for loop is executed three times in each iteration number
+will have a different value initially it will be zero in the second iteration it
+will be one and finally in the last iteration it will be two now here we can
+do something fun we can add one to this run the program and now the message is
+that the print are kind of more meaningful or more user-friendly like
+attempting number one attempting number two and so on we can take this to the
+next level so we can pass another argument here I'm going to add an
+expression one more time number plus one so we'll get one
+two three now I want to put this expression in parenthesis so let's
+select this put it in parenthesis and then multiply it by a dot so here we
+have a string that is multiplied by a number the result will be that string
+repeated that number of times let's take a look so run the program see that's
+pretty cool isn't it now let me show you one more thing
+before you finish this lecture as you saw this range function generates
+numbers starting from zero all the way up to this number here but it doesn't
+include this number here we can pass another argument say start from one and
+finish before four with this change we don't need to add one to number every
+time because in the first iteration this number variable will be set to one so we
+can simplify our code and make it cleaner let's run it one more time we
+get the exact same result we can also pass a third argument as a step so I'm
+going to change the second argument to ten and pass two as a step look at the
+result these are the numbers we get 1 3 5 and so on so pretty useful you're
+going to use this function a lot in real-world applications continuing with the example from the
+last lecture let's imagine the scenario where after the first attempt we can
+successfully send the message in that case you want to jump out of this loop
+we don't want to repeat this task of sending a message three times let me
+show you how to implement this so in this demo I'm gonna simulate the
+scenario where we can successfully send a message so we define a variable
+successful and set it to true now here after this print statement
+we'll have an if statement if successful : then perhaps we can print successful
+now here we want to jump out of this loop for that we use the break statement
+let's run this program and see what happens
+so there you go after the first attempt we are successful and there are no more
+attempts so once again I want you to pay great attention to the indentation here
+because that's one of the common issues amongst beginners so here's our for loop
+these two lines are indented with four spaces and they belong to our for loop
+in every iteration these two lines will be executed now when we get to line four
+if this condition is true then these two lines will be executed because both
+these lines are indented below this if statement now let's take this program to
+the next level what if we attempt three times and we still cannot send an email
+perhaps we want to display a different message to the user we say hey we tried
+three times but it didn't work so I'm gonna change successful to false now at
+the end here we can add an else statement this is what we call a for
+else statement what we put under this else statement will only be executed if
+this loop completes without an early termination so if we never break out of
+this loop then the else statement will be executed so here we can print a
+message like attempt at three times and failed so run
+the program see what we get three attempts followed
+by this message attempted three times and failed in contrast if we change
+successful to true because we terminate this loop using this break statement
+what we have in the else block will not be executed
+take a look run the program we have one attempt successful done in programming we have this concept
+called nested loops so we can put one loop inside of another loop and with
+this we can get some interesting results let me show you so I'm going to start
+with this loop for X in range 5 : now inside of this loop I'm gonna add
+another loop so for Y in range 3 : and then in our second loop I'm gonna
+add a print statement here we can use formatted strings to display coordinates
+remember formatted string so we have F followed by quotes now here we add
+parentheses for our coordinate first we want to display X and then comma
+followed by Y let's run this program and see what happens there you go pretty
+cool isn't it so we get 0 + 0 0 1 0 & 2 then we get 1
+& 0 1 & 1 1 & 2 and so on now let me explain how exactly Python interpreter
+executes this code so here we have two loops this is what we call the outer
+loop and this is the inner loop so the execution of our program starts here in
+the first iteration of this loop X is 0 now we get to this statement which is a
+child of this for statement because it's indented four times this statement
+itself is a loop so what we have inside of this loop will be executed three
+times in the first iteration X is 0 because we're still in the first
+iteration of the outer loop and Y is also 0 because we're in the first
+iteration of the inner loop that is why we get 0 and 0 now we go to the second
+iteration of this inner loop in this iteration Y will be 1 whereas X is still
+0 that is why we get 0 and 1 and similarly in the third iteration of our
+inner loop we'll get 0 and 2 in now we're done with the execution of the
+inner loop so the control moves back to our outer loop here we'll be in the
+second iteration so X will be 1 and then we start here again so we have to
+execute this inner loop 3 times in the first iteration Y will be 0 and X is 1
+so here we have 1 and 0 then we'll get one on one and one and two you got the
+point so this is all about nested loops so you have learned how to use four
+loops to repeat one or more statements in your programs now let's dive deeper
+and see what this range function returns so earlier you learn about the built in
+type function with this function we can get the type of an object so if I pass
+five here and run this program this is what we get so the type of this number
+or this object is int or integer now let's look at the type of the value that
+we get from the range function so as an argument we pass range of a number let's
+run this program so this range function returns an object of type range so in
+Python we have primitive types like numbers strings and boolean but we also
+have complex types range is an example one of those complex types throughout
+this course you're going to learn about a lot of other complex types now what is
+interesting about this range object is that it's iterable which means we can
+iterate over it or use it in a for loop that is why we can write code like this
+so this range function returns a range object which is eatable which means we
+can iterate over it in each iteration X will have a different value now range
+objects are not the only iterable objects in Python strings are also
+iterable so here we can add a string like Python now in each iteration X will
+hold one character in this string let me show you so print
+Peg's and I'm gonna delete these two lines here let's run this program so in
+each iteration we'll get one character and print it we have another complex
+type called list which we use to store a list of objects so we add square
+brackets this indicates a list now we can add a list of numbers or a
+list of strings like a list of names you will learn about lists later in the
+course so let's run this one more time as we can see we can iterate over lists
+in each iteration we'll get one object in this list now later in the course I
+will show you how to create your own custom objects that are eatable for
+example you will learn how to write code like this for item in shopping cart
+print item so shopping cart is going to be a custom object that you will create
+it's not going to be an integer or a string or boolean it's a custom object
+it has a different structure and we'll make it eatable so we can use it in a
+for loop and in each iteration we can get one item in the shopping cart and
+print it on a terminal alright time for an exercise I want you
+to write a program to display the even numbers between 1 to 10 so when you run
+this program you should see 2 4 6 and 8 and after these I want you to print this
+message we have 4 even numbers now here is a quick hint before you get started
+you should call the range function with 1 and 10 do not use the third argument
+which is called step so basically I want you to iterate over all the numbers
+between 1 to 10 check if each number is an even number and then print it on the
+terminal so pause the video spend two minutes on this exercise when you're
+done come back continue watching so it started with a four loop for a
+number in range one to ten : we check to see if the remainder of division of this
+number by two equals zero so if number modulus two equals zero
+then we print this number now let's run this program so we get two
+four six eight beautiful now to count the even numbers we need a separate
+variable so let's call that count initially we set it to zero now in this
+if block every time we find an even number we need to increment count so we
+set count plus equals one and finally after our for loop we can print a
+formatted string we have count even numbers let's run the program and here's
+the result hi guys thank you for watching this
+tutorial my name is Mohammad Ani and I have tons of tutorials like this for you
+on my channel so be sure to subscribe and also please like and share this
+video if you want to learn Python properly from scratch with depth I have
+a comprehensive Python tutorial for you the link is below this video so click
+the link to get started thank you and have a fantastic day

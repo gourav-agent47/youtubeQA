@@ -1,0 +1,1094 @@
+Title: Learn Python Programming - Python Course In this course, you're going to learn
+everything you need to get started with Python just be aware that I have to
+design this course for developers so if you have very little or no programming
+experience check out my other Python course for beginners you can see the
+link on the top right corner of this video python is the world's
+fastest-growing and most popular programming language not just amongst
+software developers but also amongst mathematicians data analysts scientists
+accountants network engineers and even kids in fact it's the ideal programming
+language to learn first but what makes Python so special here are six reasons
+with Python you can solve complex problems in less time with fewer lines
+of code than many other languages that's why huge companies like Google
+Spotify Dropbox and Facebook have embraced this beautiful and powerful
+language here is an example let's say we want to extract the first three
+characters of the text hello world this is the code we would have to write in
+c-sharp this is how we would do this in JavaScript and here's how we would do it
+in Python see how clean and simple the language is and that's just the
+beginning Python is a multi-purpose language and
+you can use it for a wide range of jobs such as data analysis AI and machine
+learning writing automation scripts building web mobile and desktop
+applications as well as software testing or even hacking so if you want a
+high-paying long lasting career in any of these areas especially AI and machine
+learning Python is the language to put those opportunities at your fingertips
+in fact according to indeed.com the average salary of a Python developer
+in the US was over one hundred and fifteen thousand dollars in March 2018
+and here are four more reasons that make Python the most desirable language
+Python is a high-level language so you don't have to worry about complex tasks
+such as memory management as you do in C++
+it's cross platform which means we can build and run Python apps on Windows Mac
+and Linux it has a huge community so whenever you get stuck there is someone
+out there to help and it has a large ecosystem of libraries frameworks and
+tools whatever you want to do it is likely that someone else has done it
+before because python has been around for over 20 years there are two versions
+of Python out there Python 2 which is the legacy version of Python and is
+going to be supported until year 2020 and Python 3 which is Python for the
+future in this course you're gonna learn Python 3 hi my name is Muhammed Ani and
+I'm going to be your instructor in this course I'm a software engineer with 18
+years of experience and I've taught way over a million people how to code or how
+to become top professional software engineers to learn more about me and my
+courses head over to code with mass comm alright now let's get started alright now we're ready to download and
+install Python the first thing I want you to do is to open up your browser and
+head over to python org on this page under the downloads you can see the
+latest version of python currently the latest version is 3.7 chances are in the
+future when you're watching this video there is a newer version available don't
+worry all the materials in this course will continue to apply with the future
+versions of Python so go ahead and download Python then run it if you're on Windows we're
+going to see this checkbox here add Python to path
+this is very important make sure to take it otherwise you're not going to be able
+to follow the course so now go ahead and install it now let's verify that we have installed
+Python properly if you're on Windows here in this search bar type CMD which
+is short for command prompt now here in command prompt type Python you can see
+we have successfully installed Python version 3.7 now to exit press ctrl-z
+and then enter if you're on Mac press command and space
+this opens up the spotlight search so here type terminal
+terminal and Mac is like command prompt on Windows now Mac and Linux
+why default come with an older version of Python that is version 2 so if you
+type Python you can see Python 2 here let's type what we want so press ctrl D
+to exit and then run Python 3 and this verifies that we have successfully
+installed Python 3.7 so this environment you see here is what we call Python
+interpreter here we have this interactive shell that is really useful
+for experimenting with some Python code so here we can write expressions like
+2+2 or any kind of valid Python expressions this is similar to your
+JavaScript console in the browser so if you want to quickly experiment with
+something can simply do it here but to build real programs we need a code
+editor and that's what I'm going to talk about next to build Python programs you have two
+options you can use a code editor or an IDE which is short for integrated
+development environment an IDE is basically a code editor with some fancy
+features such as Auto completion debugging unit testing and so on for
+both editors and IDs there are lots of options out there the most popular
+editors are Visual Studio code or yes code atom and sublime you can use the
+editor that you prefer the most popular IDE is PyCharm which is a JetBrains
+product in this course I'm gonna use the S code because that's my favorite code
+editor and later I'm gonna show you how to install an extension to convert the s
+code into a powerful IDE for building Python programs so if you don't have V s
+code head over to code dot visual studio comm and download the latest version of
+V ESCO now it vs code open on the top go to the
+file menu and then open somewhere on your desk create a new folder let's call
+that folder hello world as usual now open this
+folder now here on the left side we have the
+Explorer panel where you will see all the files and folders in your project so
+let's add a new file here and call it app dot pi now you may see an error on
+the bottom right corner of the screen don't worry about that we're gonna fix
+that later in this section so close this now let's write a simple Python program
+once again I've designed this course for people with some programming experience
+so you should know your variables functions conditional statements like if
+else for loops while loops you should know the basics if you don't please look
+at my other Python course for beginners you can find a link on the top right
+corner of this screen so in Python we have a bunch of built-in functions one
+of them is print which we can use to print something on the terminal let's
+add a string here hello world but let's make it more fun by adding a happy
+Persian cat here now let me show you something cool let's add another print
+statement here we add a string like an asterisk in Python you can multiply a
+string by a number like 10 and this will repeat that string 10 times take a look
+so save the changes once again you may see this error popping up don't worry
+about it we'll fix that later now we need to go back to the terminal to run
+this program however we don't have to constantly switch back and forth between
+vs code and the terminal because here we have an integrated terminal you can open
+that by pressing ctrl and backtick that is the key before number one on your
+keyboard it's right below the escape button so here's our integrated terminal
+so if you're on Windows type Python if you're on Mac Python 3 and an app that
+PI and here's the output of our program next I'm gonna show you how to convert
+vs code into a powerful idea for building Python programs in this lecture I'm gonna show you how
+to convert vs code to a powerful IDE by using an extension called Python with
+this extension or plugin we get a number of features such as linting which
+basically means analyzing our code for potential errors
+you also get debugging which involves finding and fixing errors we'll look at
+this later in the course you also get auto completion which basically helps us
+write code faster so we don't have to type every character we get code
+formatting which is all about making our code clean and readable just like how we
+format our articles newspapers books to make them clean and readable we get unit
+testing which involves writing a bunch of tests for our code we can run these
+tests in an automated fashion to make sure our code is behaving correctly and
+finally we get code snippets which are reusable code blocks and we can quickly
+generate so we don't have to type them all by hand now don't worry about
+memorizing any of these as we go through the course you're going to learn about
+these features now here in vs code on the left side click this icon this opens
+the extensions tab so these are the extensions that we can install in vs
+code to bring in additional functionality here under the recommended
+tab you can see the python extension if you don't see this simply type Python
+here on the top and here's the extension to go ahead and
+install this and then you'll have to reload vs code now here on the bottom right corner you
+can see this message linter pilant is not in stock so as I told you before
+linting is about finding potential errors in our code linter is a program
+or a tool that analyzes our code and finds these potential problems now for
+Python there are several enters a fter pilant is one of the most popular ones
+that this Python extension uses by default so we need to go ahead and
+install pylons as well now to do this first we need to change our Python
+environment so if you look here on the bottom left corner you can see the
+current python that is used in vs code that is python 2 point 6 point 9 on my
+machine chances are you see a different version
+here so click here and in this list make sure to select python 3 point 7 so these
+changes our python environment to python 3 point 7 and then we can install pilant
+by clicking this button ok pilant is installed beautiful in the next lecture
+I will show you how linting works in this lecture I'm gonna show you
+linting and action so let's start by writing some invalid code like this
+print space with no parentheses and then hello work earlier I told you that print
+is a built-in function and whenever you want to use or call a function you
+should always use parentheses now to be more precise this is actually valid
+Python 2 code but because we're using Python 3 here this is invalid code from
+Python 3 point of view so now when I save the changes you can see this red
+underline here let's hover our mouse over this underline you can see this
+tooltip it's coming from Pyland and here's the error message missing
+parenthesis in call to print did you mean print with parentheses that this is
+the benefit of linting as you're writing code you can see potential problems in
+your code you don't have to wait to run your program to see these errors so now
+if we put parentheses here and save the changes you can see that red underline
+is gone let's look at another error let's type two plus and then save the
+changes earlier we run this code in Python interpreters interactive shell
+there we got a syntax or grammar error so if
+you hover your mouse here one more time you can see pylons is telling us that
+this is invalid syntax or invalid grammar it's like an incomplete sentence
+so this is linting in action now let me show you a couple useful shortcuts here
+on the top look at the View menu here we have these problems menu look at the
+shortcut on Mac is shift command and M on Windows is probably shift control M
+so as you're working with vs code try to memorize these shortcuts because they
+really help you write code faster now let's take a look at these problems
+panel so this problems panel lists all the issues in your code in one place so
+if you have an application with multiple files this is really useful because some
+of those files may not currently be open so this linter Pyland
+will analyze all your files and if it finds any issues it will list them here
+in the problems panel now you can also put this on the right side of your
+screen so let's put it here so as you write code these problems will appear
+here now let's fix this issue so I'm gonna add three here save the changes
+and you can see the problem disappear and one last thing before we finish this
+lecture once again on the top let's go to the View menu the first item is
+command palette this is a very important feature in vs code once again look at
+the shortcut that is shift command and P on Mac or shift control P on Windows this command palette you can execute
+various commands in vs Co if you type lint here you can see all commands
+related to linting as you can see all these commands are prefixed with Python
+because these commands come with a Python extension that we installed
+earlier so these are additional features available to us in vs code the first
+command here is select linter in this list you can see various linters
+available for pilot so as you're reading tutorials or talking to other people you
+will hear about linter such as flake ate my pie pep 8 and so on different
+developers prefer different linters I personally prefer pilant that is the
+most popular one and that's the default linter set and the Python extension of
+vs code if you're adventurous we can try using other linters on your own the
+difference between these linters is in how they find and report errors some
+error messages are more meaningful or more friendly the others are more
+ambiguous so that's all about linting in the next lecture we'll talk about
+formatting code in Python community we have a bunch of
+documents called Python enhancement proposals or peps here on Google if you
+search for Python peps you can see the list of all these paps
+under python.org slash dev slash paps let's have a quick look here
+so here are the paps you can see each PAP has a number and a title the one
+that is very popular amongst Python developers is pep 8 which is a style
+guide for Python code a style guide is basically a document that defines a
+bunch of rules for formatting and styling our code if you follow these
+conventions the code that you write will end up being consistent with other
+people's code now if you have time you can go ahead and read this PAP 8
+documentation but if not don't worry because throughout this course I'm gonna
+explain the key things in pep 8 in this lecture I'm gonna show you a tool that
+helps you automatically format your code according to pap 8
+so back in vs code let's write some Python code x equals one here I'm
+declaring a variable and setting it to one if you're not familiar with
+variables don't worry in the next section you're going to
+learn about that so according to peb 8 this code is considered ugly because by
+convention we should add a space around this equal sign or the assignment
+operator now since you're starting out with Python you probably don't know
+these rules so let me show you a tool that helps you automatically format your
+code let's revert this back to its original state now we need to go back to
+the command palette remember so it's right here under view and the shortcut
+is shift command and P here if you search for format you can see this
+command format document the first time you execute this command you're going to
+see this message here formatter Auto kept 8 is not installed so there are a
+bunch of tools for formatting Python code the most popular one is Auto kept 8
+and this is the tool that this Python extension we installed uses to format
+our code so let's go ahead and install this good now one more time let's open
+up the command palette and execute format document see is tool
+automatically formats our code beautiful let's take a look at another example I'm
+going to declare another variable Y and set it to 2 and a variable with a long
+name like unit underlined price I'm set this to 3 now some developers have this
+habit of formatting their variable declarations like this so they put all
+these equal signs in the same column according to pep 8 this is considered
+ugly so once again let's format our code that is better beautiful now let me show
+you a trick opening up this command palette and searching for format
+document every time is a little bit time-consuming so I want to show you how
+to have your file automatically formatted as soon as you save the
+changes on the top let's go to the code menu
+preferences and settings here in the search box search for format on save
+so we have this option editor format on save
+take this now back to apt at PI I'm gonna change the formatting of these
+lines make them really ugly now as soon as I save the changes you can see my
+code is reformatted beautiful so you have learned that in order to run
+this Python program we'll have to open up the terminal window and run Python on
+windows or Python 3 on Mac and an app that pi this is a little bit tedious so
+let me show you a shortcut once again let's go to the extensions panel here
+search for code runner there are multiple code runners out
+there the one that I'm talking about is this one with the yellow icon so go
+ahead and install this and then reload vs code now instead of opening up the
+terminal and manually typing python after pi all you have to do is to press
+ctrl alt and in you can see the output here beautiful
+just be aware that if you make any changes you'll have to save the changes
+before using this shortcut otherwise you're going to see the old result now
+there is a tiny problem here so you can see this is the command that is executed
+to run this Python program so by default this command is using Python
+- U and here is the name of our file if you're on Windows that's perfectly fine
+but if you're on Mac you know that Python refers to Python - here we want
+to change this to Python 3 this is very easy once again on the top under the
+code menu let's go to preferences settings and then here
+under this dot-dot-dot go to open settings that JSON
+now here in the search bar type code - runner dot executors map so these are
+the default settings used by this code runner extension you can see this
+extension support executing code in a lot of languages like JavaScript Java
+and so on now if you scroll down here you can see Python and in front of that
+you can see the command that is used to execute Python code we need to change
+this however we cannot change the default settings we should change the
+user settings so on the right side after the last setting type a comma and then
+in quotes type code - runner dot executors map and then press enter this
+will automatically copy all the settings on the left side to the right side now
+we can easily change one of this so here's Python let's change the command
+to Python 3 you only have to do this if you're on Mac and by the way sorry if we
+have mentioned Windows and Mac a few times throughout this course that's
+pretty much it we are not going to differentiate between Windows and Mac in
+the future so save the changes and we're done when we talk about Python we mean two
+separate things that are closely related python language and a particular
+implementation python as a language is just a specification that defines a set
+of rules and grammar for writing Python code a Python implementation is
+basically a program that understands those rules and can execute Python code
+earlier in the course we downloaded Python from python.org this is the
+default implementation of Python called C Python it's a program written in C
+that's why it's called C Python so here in terminal when we run Python we get
+this C Python this is the default implementation of Python there are a few
+other implementations out there such as JSON written in Java
+ironpython written in c-sharp and pi pi written in a subset of Python itself as
+new features are added to the Python language they are first supported by C
+Python because that's the default implementation and then they will
+gradually come to the other implementations in theory if we give
+some Python code to any of these implementations we should get the same
+result but in practice that's not always the case certain features may be
+available in one implementation but not another or they may just behave a little
+bit differently in a particular implementation now you might ask what is
+the point of this why do we have several implementations of Python wouldn't see
+Python be enough well it's for the same reason that we have multiple operating
+systems or multiple browsers or multiple programming languages after all these
+years B programmers haven't agreed on a single programming language and that's
+the same story with Python implementations however there is one
+technical reason behind these implementations that you should be aware
+of since JSON is implemented in Java it allows you to reuse some existing Java
+code in a Python program so if you're a Java developer and you want to import
+some Java code into a Python program you should use JSON instead of C Python
+similarly I Python is written in c-sharp so if
+you're a c-sharp developer and want to bring some c-sharp code into a Python
+program you will have to use ironpython next we'll look at how
+exactly C Python execute Python code the programming languages we use like C
+C sharp Java Python these are all simple text-based languages that we humans
+understand computers don't understand them they only understand machine code
+so if we have some code written in C we should convert it to machine code and
+that's the job of a C compiler so a C compiler is a program that knows how to
+convert or compile C code into machine code
+however this machine code is specific to the type of CPU of a computer so if we
+compile a C program on a Windows machine we can't execute it on a Mac because
+Windows and Mac have different machine code just like how people from different
+countries speak different languages Java came to solve this problem Java compiler
+doesn't compile Java code into machine code instead it compiles it into a
+portable language called Java bytecode which is not specific to a hardware
+platform like Windows or Mac now we still need to convert Java bytecode to
+machine code so Java also comes with a program called Java Virtual Machine or
+JVM for doing this when we run a Java program JVM kicks in it loads our Java
+bytecode and then at runtime it will convert each instruction to machine code
+with this model we can run Java bytecode on any platforms that have a JVM we have
+JVM implementations for Windows Mac and so on so the JVM implementation on
+Windows knows how to convert Java byte code into machine code that a Windows
+machine can understand c-sharp and Python have also taken the same route
+so there are platform-independent when we run a Python program using C Python
+first it will compile our Python code into Python bytecode then it will pass
+that bytecode to Python virtual machine which will in turn convert it into
+machine code and execute it this is how C Python works in the last lecture we
+talked about various Python implementation I told you that if you
+want to reuse some java code in a Python program you should use Java now
+let's see how JSON makes this possible when you use JSON to run a Python
+program instead of compiling your Python code into Python bytecode it will
+compile it to Java code so we can take this Java bytecode
+and run it using java virtual machine and that's why you can import some java
+code into a Python program when using jython
+because the end result is Java bytecode which will eventually be executed by
+Java Virtual Machine so that brings us to the end of the
+first section if you have enjoyed this course so far please like this video and
+share it with others in the next section you're going to learn Python Basics in
+only one hour I hope you enjoyed this section and thank you for watching well hello Marsh here thank you for
+watching my Python tutorial I wanted to let you know that this tutorial is the
+first two hours of my complete Python course where you will learn how to use
+Python in real-world scenarios such as data analysis and visualization
+automating repetitive boring tasks that involve working with files and folders
+spreadsheets PDFs data compression sending emails web crawling consuming
+API is like Yelp to get information about businesses and much much more this
+course comes with a 30 day no questions asked money back guarantee and a
+certificate of completion if you're interested click the link below this
+video to access the course all right let's start this section by a
+discussion of variables and the built-in primitive types in Python including
+integers floats boolean's and strings so here I'm gonna define a few variables
+starting with the first one students count note that here all the
+letters are lowercase and we're using an underscore to separate multiple words
+this is the naming convention we use in Python so here we said students count to
+let's say a thousand this is an example of an integer let's look at an example
+of a float so we said rating two for let's say 99
+here's another variable is published we set this to true or false note that the
+first letter is uppercase and finally let's take a look at an example of a
+string so we set course name to Python now in Python you can use either double
+quotes or single quotes or you can use triple quotes if your string is multiple
+lines for example here I can put triple quotes and in between them I can add a
+string that has multiple lights okay now one interesting feature in Python is
+that you can initialize multiple variables on the same line for example
+let's say we have coordinates like x and y we can initialize these two on the
+same line so we can set X comma Y we set it to 1
+comma 2 this line is exactly equivalent to these two lines so it's a shortcut
+and finally just like almost every programming language we can set multiple
+variables to the same value for example we can set x and y to 1 so these are the
+basics of variables next I'll talk about the dynamic nature of Python in terms of typing programming languages
+fall into two categories static languages like C++ C sharp and
+Java and dynamic languages like JavaScript Ruby and Python in static
+languages when declaring a variable we need to specify its type for example in
+c-sharp when declaring this variable we need to set its type to an integer so
+with this the type of this variable will always be an integer when we compile
+this program or compiler knows that students count is an integer so if you
+accidentally try to set it to let's say a boolean later on the compiler will
+complain this is how static languages work in dynamic languages like
+JavaScript and Python we don't have this behavior so we don't set a type when
+defining a variable we just define a variable by setting it to a value so in
+dynamic languages the type of a variable is determined at runtime
+now here if you hover your mouse over students count you can see this is an
+integer so when working on a large complex program if you want to know the
+type of a variable you can simply hover your mouse over it we also have this
+built-in function called type we can pass a variable or an object to it like
+students count and then print this on the console so let's run this program
+you can see the type of students count is a class of integer what is this
+Python is an object-oriented language so here we have the concept of classes if
+you're not familiar with classes don't worry I'm gonna talk about them in
+detail later in the course all I want you to know now is that in Python we
+have a class called int that represents integers so all
+integers are instances of this class let's take a look at a few more examples
+so here in this interactive shell let's look at the type of a float once again
+it's a class called float let's look at type of a boolean this is also a class
+called bool and finally let's look at type I'm a string that's a class called
+stir so here's the take away Python is a dynamic language which means the type of
+variables are determined at run time as opposed to compile time sorry the last lecture you learned that
+Python is a dynamic language which means the type of variables is determined at
+run time so here we have this variable age set to an integer now we can reset
+this to a string this is perfectly valid Python code so if we print a age and run
+this program you can see our program is running successfully now if you come to
+python from a static language like C sharp or Java you probably don't like
+this but the good news is that in Python 3.6 we have a new feature called type
+annotation or type hinting so we can annotate our variables with their type
+so we had a colon here and then int for integer now when I save the changes
+everything is still valid if I run the program there are no errors because
+python is a dynamic language however there is a new lantern called my PI that
+checks for these type annotations so if you define a variable as an integer and
+then set it to a string my pie is gonna complain let me show you so open up the
+command palette and type select linter correctly you can see we are using pi
+lint in this list select my pi now the first time you do this you're gonna see
+a message on the bottom right corner of the screen telling you that my pine is
+not installed so go ahead and install that now on line two you can see a red
+line under H let's have a look here so my pi is giving us an error incompatible
+types in assignment so this is all about type annotation or type in ting so here we have this variable X set to 1
+when we run this program Python interpreter will allocate some memory to
+store this number 1 so our X variable is purely a label for that memory location
+let me show you so here we have this built-in function called ID we can pass
+the variable here like X and this will return the address of the memory
+location that X references so now let's print this on the console there you go
+so this is the address of the memory location where we have stored number one
+now one thing you need to know about the built-in primitive types that I've
+talked about so far like numbers strings and boolean is that all these types are
+immutable which means their value cannot change so here if we try to update X
+python interpreter is going to allocate some new memory to store the updated
+value in other words what we have at this original memory location will not
+be affected because integers are immutable let me show you this so here
+after we print the idea of X I'm gonna increment X and print its ID one more
+time see what we get we get two different addresses so our X variable or
+X label was originally referencing this memory location at this memory location
+we have the number one because integers are immutable we cannot change the value
+at this memory location so on line four when we update X python interpreter will
+allocate some new memory at this location and then X will reference this
+new memory location now because we don't have a reference to the original memory
+at some point Python garbage collector will automatically release this memory
+so this is how immutable types work now let's see what would happen
+if X was set to a mutable type here is an example so in Python we have
+a concept called lists for storing a list of objects so here we use square
+brackets to indicate that this is a list we can add multiple objects here now on
+line four let's add a new number to this list so we call X dot append and pass
+four here now let's run the program one more time so as we can see the address
+is not changed because lists are mutable so whenever we change them by adding new
+objects to them or removing existing ones the changes are applied at the same
+memory location so this is the difference between mutable and immutable
+types over the next few lectures we're going
+to take a closer look at strings so here we have a variable of type string to get
+the number of characters in this string we use the built-in Len function now
+look at the intellisense this function returns the number of items in a
+container so it's not specific to strings it's a generic reusable function
+we can pass the a string here and this will return the number of characters in
+the string or we can pass a list and this will return the number of items in
+the list so here let's pass this course variable and print the length so we have
+18 characters beautiful similar to many other languages we can access individual
+characters using square bracket notation so to get the first character we use
+square brackets 0 because the index of the first character here is 0 now let's
+print this run the program so we get P now one interesting feature in Python
+that I personally haven't seen in other programming languages is a negative
+index so here let's duplicate this line and pass negative 1 what do you think
+we're gonna get well if 0 represents the first character negative 1 takes us back
+to the end of the string so it returns the first character from the end of the
+string let's run this program so we get G similarly we could pass negative 2 and
+this will return the second character from the end very powerful now using a
+similar syntax we can also slice strings so let's duplicate this line to slice
+the string we need to pass two indexes the start index colon the end index so
+this will return all the characters starting from the start index all the
+way up to the end index but it doesn't include the character
+at the end index in this example it's going to return zero one and two these
+three characters but not the character at index 3 ok
+so let's run the program we get the first three characters beautiful now we
+can exclude either or both these indexes and Python will assume default values so
+let's duplicate this line and exclude the start index what do you think python
+is going to put here it's common sense it's going to pass zero as the start
+index so let's run the program you can see we get the same result so these last
+two expressions are exactly the same now what if we exclude the end index what do
+you think Python is going to put here it's going to pass the length of the
+string so let's run the program you can see this returns the entire string and
+finally if we exclude both the start and end index again we get the same result
+so let's verify this beautiful now one thing you need to take into account here
+is that whenever we access an individual character or a range of characters
+Python interpreter is going to allocate some new memory and copied those
+characters into that new memory location because as I told you before strings are
+immutable so the value that we have at the original memory location that is
+Python programming will not be affected we can verify this
+so let's print ID of course and then print ID of course of zero and then run
+the program you can see two different addresses here that is because strings
+and other primitive types like numbers and billions are immutable in Python here we have this message variable set
+to this string Python programming now let's say we want to display a double
+quote right here the problem we have is that this second double quote indicates
+the end of the string so python interpreter will not be able to run this
+code now there are two ways to solve this problem one way is to replace these
+double quotes at the beginning and end of our string with single quotes so
+single code here and one more here if we run this program we see this double code
+just before programming beautiful but let's say for whatever reason you want
+to use double quotes here perhaps to be consistent with the rest of our code so
+how can we display another double quote in the middle of this string well in
+Python we have a concept that is borrowed from the C language that is
+called escape character so in Python strings backslash has a special meaning
+and we refer to it as an escape character so Python interpreter sees
+this backslash as a special character it has a special meaning and depending on
+the character that comes after that it will interpret it differently let's see
+this in action so now when we run this program we can see our double code here
+but the backslash character is not there because backslash is an escape character
+so in this case it's used to escape the double code now we refer to these two
+characters as an escape sequence in Python we have a few other escape
+sequences that you should be aware of let me show you
+so this hash sign is an indication of a comment line so it's not executed you
+have seen backslash double quote we also have backslash single code for
+displaying a single quote in our string we also have double backslashes so if
+you really want to have a backslash in your string you should prefix it with
+another backslash here is an example let's run this program
+and here's our backslash and finally the last escape sequence is backslash n
+which is short for new light so here if I add a backslash N and run this program
+you can see programming is on the second line now this is OK for a simple string
+like Python programming here but if you're trying to format a complex string
+into multiple lines it's better to use triple quotes otherwise you'll end up
+with a lot of pack /n sequences and that looks pretty ugly so here we can use
+triple quotes and simply add Python newline programming so when we run this
+program we get exactly the same result as before but not quite exactly because
+here we have one new line on the top that is because I put Python on a new
+line if I put Python right in front of double quotes run the program again that
+new line disappears so here are the escape sequences in
+Python here we have two variables first and
+last let's say we want to print my full name on the console so we can define
+another variable full set it to first then concatenate it with a space and one
+more time concatenate it with last now when we print full we get my full name
+on the console beautiful now this approach are using concatenation to
+build a string is okay but there is a better and newer approach we can use
+formatted strings so here we can set full to this string and prefix it with
+an F which can be lowercase or uppercase it's formatted string doesn't have a
+constant value like these two strings here it's actually an expression that
+will be evaluated at runtime so here we want to add our first name we use curly
+braces to print the value of the first variable after that we add a space and
+then we add curly braces one more time to print the last name so at runtime
+this expression will be evaluated what we have in between curly braces will be
+replaced at runtime now let's run this program one more time we get the exact
+same result just be aware that you can put any valid expressions in between
+curly braces so earlier you learned about the built-in Len function we can
+call Len here to get the length of this string let's run this program one more
+time so we get four we can also replace last with an expression like there's two
+plus two let's run this program we get four and four so when using formatted
+strings you can put any valid expressions in between curly braces and it's lecture we're going to explore
+a few useful methods of string objects in Python so this course variable we
+have here is a string object which means we can use the dot notation to find all
+the methods or functions applicable on strings here we have a large list of
+functions or more accurately methods in this lecture I'm gonna quickly show you
+a few of them you can learn about the rest on your own so here let's say we
+want to convert this course to uppercase we can use the upper method and print
+the result and we'll get this uppercase string here similar to that we have
+lower to convert it to lowercase we also have title which will convert this to
+title case which means the first character of every word will be
+uppercase and this is useful for blog posts product titles courses and so on
+so let's run this one more time we get this string here another useful method
+is strip for trimming whitespace so if we have a couple of extra whitespace at
+the beginning or end of this string we can get rid of them using the strip
+method and this is useful when you get input from the user
+so a print course that strip save the changes note that in the previous
+examples you can see those extra white spaces at the beginning but when we call
+the strip method those spaces are gone we also have left and right strip for
+removing the whitespace from the beginning or end of this string
+now if you want to find the index of a character or a substring in your string
+you can use the find method so let's print course that find let's search for
+pro run the program so the index of pro here is 9 now if I change this to
+lowercase P we'll get negative 1 because string comparisons are case sensitive
+and we don't have these exact three characters in our course variable now if
+you want to replace a character or a sequence of characters you can use the
+replace method so let's print course that replace let's replace all capital
+pees ways a hyphen and with this we'll get this weird string here and finally
+to check for the existence of a character or a sequence of characters in
+your string you can use the in operator so let's see if we have programming in
+this course object let's run the program and we get false because I realize that
+I missed the letter R here so let's run the program one more time this time we
+get true now we also have the not operator so you can prefix this with not
+and this time we'll get false so we have covered strings now let's
+look at numbers we have a few different ways to represent numbers in Python we
+can use decimal numbers that you have seen before we can also represent them
+in binary format so we prefix the number with 0 B as in short for binary and then
+we'll add individual bits for example 0 B 10 which is the number 2 in binary
+system now let's print X we'll get 2 if you want to print the binary
+representation of this number you can use the built in bin function so bin
+takes any numbers and returns its binary representation there you go we can also
+represent numbers in hexadecimal format so we said X - 0 X as the prefix and
+then we'll add our hexadecimal number let's print X so we get 300 which is in
+the decimal system if you want to print this in the hexadecimal format you would
+use the built-in hex function let's run this program one more time and now we
+get 0 X 12 C beautiful in Python we also have support for complex numbers so
+complex numbers in maths take the form a plus B I if you're not
+familiar with this don't worry this is a concept used in mathematics so if you
+want to use Python to build web applications you're never gonna use this
+but very briefly let me show you how you can represent complex numbers in Python
+so here we can set X - 1 + 2 J so J in Python is like I or imaginary number in
+math you can use either lowercase or uppercase J whatever you prefer now
+let's print X we'll get this complex number here
+you in Python we have all the arithmetic
+operators that you have probably seen before for example we can set X to 10
+plus 3 we have addition I have subtraction multiplication division but
+we actually have two kinds of division operators let's look at the first one so
+print X as you can see the result of this division operator is a
+floating-point number if you want an integer you would use a different
+division operator that is double slash let's run this program so we get 3 we
+also have modulus so that is the remainder of a division and finally we
+have exponent that is left ^ right so here 10 to the power of 3 'is a thousand
+now for all these operators here we have an Augmented assignment operator what do
+we mean by that let's say we want to add 1 to X we can
+write a statement like this so x equals x plus 1 or we can use an Augmented
+assignment operator so X plus equals 1 these two statements are exactly the
+same and what we have on the left side of the assignment operator can be any of
+these arithmetic operators here and one last thing before we finish this lecture
+in Python unlike languages like JavaScript or C sharp we don't have the
+increment or decrement operators so we don't have X plus plus or X minus minus in this lecture I'm gonna show you a few
+useful functions for working with numbers so let's set X to 3.14 or
+actually let's rename this to PI note that here I have used uppercase letters
+to indicate that this is a constant in Python unlike languages like C sharp and
+JavaScript we don't have constants we only have variables so if we define this
+there is nothing that stops us from changing the value of this variable so
+by convention we use uppercase letters to tell other developers in the team
+that this pi is a constant and it shouldn't be modified now let me show
+you a few useful built-in functions to work with numbers if you want to round
+the number you can use the round function so let's pass PI here and print
+it so we get 3 we have another useful function ABS short for absolute and it
+returns the absolute value of a number so if you had a minus sign here when we
+print this will get 3.14 here you go now to see the complete list of built-in
+functions in Python here in Google search for Python 3 make sure to add the
+version number and then add built-in functions on this page you can see all
+the built-in functions in Python now in this list we only have a few functions
+to work with numbers if you want to perform complex mathematical
+computations we have a separate module for that that's the math module so back
+to our code on the top first we need to import the math module now mass is an
+object with a bunch of useful methods for performing mathematical computations
+so here we can use the dot notation to see all these methods available to us
+for example you can use mass dot floor to get the floor of pi and this returns
+-4 because here we are using a negative sign
+if you want to see the complete list of functions or methods in the math module
+search for Python 3 math module here on this page you can see all the functions
+and their description quite often when we receive input from
+the user that input comes as a string and there are times that we need to
+convert that string to a different type here is an example we have this built-in
+function input we can add a label here like X this returns the users input as a
+string so we store it in this variable now let's imagine why should be X plus 1
+now when we run this code we're gonna get an error let me show you don't run
+this using the code runner because code runner runs this code in
+the output window which is read-only so you won't be able to enter a value so
+open up the terminal by pressing ctrl + bhakti and run Python different windows
+or Python 3 if you're on Mac I've got PI let's add one here look we get this
+error type error this is happening because Python doesn't know how to
+interpret this expression because here we have two different outcomes if X is
+the string one one outcome is to convert this other operand here to a string and
+the result would be 11 the other outcome is to convert X to a number so we'll
+have 1 plus 1 and the outcome will be 2 so Python doesn't know how to do type
+conversion here and that's the reason we say Python is a strongly typed language
+because it doesn't do any implicit type conversion on your behalf you have to
+explicitly tell Python how you want your objects to be converted to the right
+type Java Script on the other hand is a weakly typed language so it does perform
+implicit type conversion for you now to solve this problem we need to use one of
+the built-in type conversion functions we have int float pull and stir or
+string now in this case we don't need to use string here because we already have
+a string and there is no reason to convert a string to another but there
+are times that you may want to convert an object to your string so just be
+aware of this function now let's take a look at what this functions return and let's delayed line two because this
+is the bad boy here save the changes back in the terminal let's run the
+application one more time and enter one so here's what we get number one as an
+integer one point zero which is a float and true so int and float are pretty
+self-explanatory but bull requires a little bit more explanation because in
+Python similar to JavaScript we have this concept of truthy and falsy values
+so here are the list of false e values empty strings number zero empty lists
+and none which is an object that represents the absence of a value this
+is exactly like null in C based languages so if we have any of these
+values and we try to convert them to a boolean using the bull function the
+result will be boolean false anything else would be true let's take a look at
+a few examples so here in the interactive shell I told you that number
+zero is considered false II so when we convert it to bool we'll get false any
+other numbers are true or true the-- so here's an example
+bula one is true if we add a negative number we also get true ask for strings
+an empty string is false e so we get false any other strings is truth e so
+even if I had the string falls here the result is true because this is a non
+empty string so here are the faulty values in Python
+whenever these values are used in a boolean context they will be equivalent
+to boolean false alright now let's talk about conditional
+statements so I'm going to start by defining a variable H and sending it to
+22 now let's see if H is greater than or equal to 18 so in Python we have these
+comparison operators just like the other languages that you have worked with we
+also have equal and not equal now let's rewrite this back to greater than or
+equal to 18 now here's an interesting fact about Python in Python we don't
+have braces which means we're not gonna spend two decades fighting over where to
+put this braces shall we put them here or here no more nonsense like that it's
+over that's it no more so instead we put a colon at the end of this line now note
+that when I press ENTER this cursor is automatically indent so we use
+indentation to specify a code block here we can add a print statement adult we
+can have another print statement this is also part of this block now to terminate
+this block we simply remove the indentation now here we can have zero or
+more elseif blocks in python we call them Elif here we add another condition
+like if H is greater than or equal to 13 once again we have indentation let's
+print teenager and finally optionally we can have an else block once again colon
+print with one or more statements in this case we want to print child finally
+we'll have let's say all done now note that currently we have two spaces for
+indentation but when I save the changes auto-pay page kicks in and reformat our
+code according to pay paid according to pap 8 we should use four spaces for
+indentation take a look save the changes now we have four spaces
+you can also use tabs but only if you're maintaining a code that is written with
+that style if you're starting a new project prefer four spaces as the
+standard but you cannot mix tabs and spaces in Python three that's not
+allowed now let me show you a shortcut so here
+in a new file let's just type if look at these three items with this square icon
+these are code snippets so here on if-else I press ENTER and this
+automatically generates this snippet this came with the Python extension that
+we installed at the beginning of the course so here you can change the
+condition to whatever X is greater than one
+what is this past keyword this is basically a statement that doesn't do
+anything it's here purely to fill this if block because we cannot have an empty
+if block like this I say have the changes look we have this red underlined
+here that is not valid Python code so if you want to have just an empty block you
+use the pass keyword in Python just like the other languages
+we have three logical operators we have the logical and the logical or and not
+let's take a look at a few examples so I'm gonna start by defining a variable
+name sending it to Maj now let's say this is the input that we get from the
+user we want to check to see if name is an empty string how do we do that well
+earlier I talked about the faulty values in Python so we have 0 empty of string
+nan and an empty list these are all considered false e so let's talk about
+an empty string if this is interpreted as false then if we apply the not
+operator on it will get true right so to check to see if name is an empty
+string we can simply write a statement like this if not named color that's it
+print name is empty now let's run this program obviously we don't get that
+message however if I change this to an empty string and rerun the program we
+get name is empty but what if I add a white space here
+well white space is not considered true see because it's not an empty string so
+look if I run the program we don't get the message to fix this issue we can
+simply call dot strip method to get rid of all the white space now let's run it
+one more time beautiful so this is our not operator let's take a
+look at an example of ant so I'm going to set H to 22 now let's see if H is
+greater than or equal to 18 and age is less than 65 we say you are eligible
+good pretty easy right now here a question how do we write that
+expression in math we write it like this well more accurately we should add the
+equal sign here so age is between 18 and 65 right I have good news for you
+in Python you can simply write this expression that's perfectly fine this is
+what we call chaining comparison operators so we can rewrite this
+expression in a simpler and more meaningful way this is one of the
+reasons that Python is a highly popular language because the syntax is so clean
+without any clutter it's easy to understand and it comes with all these
+best practices and standards for writing clean code so let's rewrite this to 18
+like this good now let's run the program obviously this person is eligible so here we have this piece of code
+similar to what we wrote in the last lecture if the person is 18 years or
+older we set the message to eligible otherwise we set it to not eligible in C
+based languages we have this operator called ternary operator that allows us
+to rewrite this piece of code in a more compact way let me show you how that
+looks like so we set message to we add our condition so if age is greater than
+or equal to 18 we add a question mark if that is true
+we set the message to eligible otherwise indicated by a colon we set it to not
+eligible if you have worked with C sharp JavaScript C++ Java you have seen this
+before if not don't worry let me show you the Python way so in Python we can
+rewrite this expression almost in plain English so message is eligible if age is
+greater than or equal to 18 otherwise it's not eligible isn't that easy so
+this is the ternary operator in Python in Python we have two types of loops so
+unlike some languages that have four or five different kinds of loops here we
+only have two types we have four loops and while loops their syntax is very
+simple and clean let me show you so we start with the four loops with four
+loops we can iterate over any object that is a trouble here are a few
+examples we can iterate over strings so for X in Python because strings in
+Python are a trouble which means we can iterate over them so in each iteration
+our loop variable X will hold one character let me show you so we
+terminate this line with a colon just like our if clauses now use
+indentation to specify the block of statements so we simply print X run the
+program this is what we get here's another example we can loop over lists
+so let's say we have a list of names a b and c colon print x there you go so we
+get ABC here now what if you want to loop over a sequence of numbers that's
+when we use the built-in range function let me show you so for x in we call the
+range function pass a number like 5 look at what happens now to keep this example
+clear I'm gonna comment out these few lines so the shortcut on Mac is command
+and slash on Windows is control slash now let's run this program
+so when we call range of 5 we get numbers 0 to 4 we can pass a starting
+number like 2 to 5 let's run this one more time so now we get to 3 4 we can
+also pass a third argument here called step let me show you so I'm going to
+change this zero to ten let's say we want to display
+all the even numbers between zero to ten so we passed two here that is our step
+now when we run the program we get zero to four and so on
+now one thing you need to understand about this range function is that it
+does not return and list let me show you so I'm gonna comment out these two lines
+as well let's just print range of 5 what do we see we see range of 0 to 5 we
+don't see a list object in contrast if we had a list like 1 2 3 4 5 see this is
+how we see a list printed in the terminal so what is returned from the
+range function is not a list it's a different kind of object it's a range
+object let me show you so here I'm gonna call the built-in type function now
+let's look at the type of this object it's an instance of a class called
+range so our range function returns a range object range objects in Python are
+iterable like strings and lists so we can use them in for loops now what is
+interesting about this range objects is that they take a very small amount of
+memory so here if we pass let's say 5 billion we are not gonna get a list of 5
+billion elements you have a small object that can be iterated over in each
+iteration it will produce a new number like 1 2 3 4 and so on in contrast if we
+had a list of 5 billion items that list would take significant amount of memory
+so this is the difference between list and range objects so here we have a list of names let's
+write a simple program and check to see if you have a name that starts with J in
+this list so we can use our for loop for name in names now if name that starts
+with J perhaps we want to display a message like found now if this list has
+a million objects as soon as we find the first object we want to jump out of this
+loop we don't want to continue looping for performance reasons so this is where
+we use the break statement you have probably seen this before when python
+interpreter sees this statement it will terminate
+this iteration so now we jump out of this loop let's add another scenario to
+this program if we loop over all the names in this list and we don't find a
+name that matches our criteria perhaps we want to display a different message
+to the user like hey we couldn't find a name that starts with J so typically how
+we implement this in other programming languages is like this on the top we
+define a flag like found and set it to false then here as soon as we find an
+object that matches our criteria we set this flag to true and then after our for
+block we check to see if not found we print not found let's save the changes
+good run the program obviously we have a name that starts with J so found
+beautiful now let's change this to a John around the program not found so our
+algorithm is working properly but in Python there is a cleaner way to
+implement this scenario we don't need this found flag so let's delete it from
+here and here all we have to do is to get the same result is to change the
+statement to else so we have four else blocks
+in Python this else Clause is executed if our for loop completes successfully
+without an immediate break so if we iterate over all the objects in this
+iterable then this else Clause will be executed so now when we run this program
+we get the exact same result the other type of loose we have in
+Python our while loops so let's build a simple guessing game I'm going to define
+two variables yes set to zero and answer set to five now we can write a while
+loop like this while answer is not equal to guess
+once again : here we have indentation we can get the input from the user
+make a guess now as you know this returns a string so we need to convert
+this to an integer and then store it and the guest variable now as I told you
+before this code runner extension runs our code in the output window which is
+read-only so we cannot enter values there to fix this issue on the top let's
+go to preferences settings then click here and open settings at JSON
+now here we need to add a new setting that is code - runner that run in
+terminal by default it's false we need to set this to true save the changes now
+when we run this program using code runner it runs it in terminal so here in
+terminal window let's add a number like 1 2 3 4 as soon as we enter 5 the game
+stops so this is our while loop similar to for loops we have an else block here
+we can optionally use that this is only executed if the while loop completes
+successfully without using a break statement
+you to define a function we start with the
+keyword def which is short for define or function definition here you can see we
+have a few code snippets the first one is for defining a function so just press
+Enter so here's the basic syntax we start with
+a function name like increment now press tab in parenthesis we define parameters
+if they exist in this case let's have a couple of parameters like number and why
+so we want to increment a number by a given value right also you can see in
+this line is terminated by a colon and right after that we are using
+indentation to specify the body of this function just like our if and four
+classes now we can call this function like this so increment parenthesis give
+it a couple of values like two and three now note that when I save the changes
+you're going to see two line breaks after this function so save there you go
+so you have two line breaks because that's the style that pepp eight defines
+so we should always have two line breaks after our functions now these functions
+by default return the non or a null value so even though we don't have a
+return statement here this function is still returning a value let me show you
+so print the return value of increment and run the program look we get not now
+let's return a value like number plus by run the program again now we get five
+beautiful in Python unlike many other languages out there we can return
+multiple values from our functions we simply put them in parentheses so here
+we add parentheses let's say we want to return the original number as well as
+the updated number so number comma number plus PI now let's see what we get
+when we run this program serve run it so in parentheses we get two which is the
+original number and the updated number what is this this is
+what we call a top-up which is basically a read-only list so earlier in the
+course you have seen lists like numbers we use square brackets 1 2 3 this is a
+list we can add new objects to it we can remove existing objects a topple is like
+a list but we cannot modify it so we cannot add new objects to it we cannot
+remove existing objects now to convert this list with topple we use parentheses
+instead of square brackets okay delete another useful feature we have
+here is called keyword arguments so currently if someone looks at this code
+they may not be able to tell what exactly these arguments are for we can
+use keyword arguments to make our code more readable for example here we can
+prefix the second argument with something like this by equals now we can
+read this code like plain English increment two by three so this is what
+we call a keyword argument it's just a way to make our code more readable also
+similar to a lot of languages out there we can assign default values to these
+parameters for example we can set a default value for the by parameter so
+now we don't have to pass a second argument here and when we run this
+program the value of y will be set to 1 by default and one last thing before we
+finish this lecture earlier I talked about type annotation or type hinting we
+can use that feature in our functions as well so here we can annotate these
+parameters as well as the increment function itself so here we had : int for
+integer and here also : int and finally for the function itself before this :
+that terminus this line we need to add an arrow and then we'll add the return
+type of this function so integer as well now in this case we have a red underline
+here we i annotated this function to return an
+integer but I'm returning a topple so more accurately this should be topple
+save the changes and the error is gone there are times that you may want to
+pass an arbitrary number of arguments to a function here is an example let's say
+we have a function called multiply that currently takes two parameters a and B
+and this function would simply return a times B and then we can call it like
+this so far so good but what if you want to
+pass a variable number of arguments here like four and five well one way is to
+put these arguments in a list then we need to replace these two parameters
+with a list and we should also change the implementation of this function here
+we need a loop to iterate over this list and multiply all its elements that is
+perfectly fine however this syntax is a little bit noisy
+wouldn't that be nicer if we could pass these numbers or these arguments here
+without these additional square brackets let me show you how to do this so all we
+have to do is to prefix this parameter with an asterisk now let's print list
+and see what we get when we call the multiply function so save the changes
+run the program what do we get here we get a top hole because of these
+parentheses so when we add an asterisk before a parameter Python will see that
+parameter as a topple so when we pass an arbitrary number of arguments Python
+will automatically package them into a topple
+as I told you before a topple is like a list so we can loop over it get all the
+numbers and multiply them together let me show you real quick so we start by
+defining a variable total we set it to one next with a loop so for number in
+list : here we simply do total times equal number and finally we return total
+the changes good run the program actually I forgot to print the results
+so let's print it here run it one more time so here's the total in the last lecture you'll learn about
+the syntax for passing a variable number of arguments to a function we have a
+variation of this syntax and that's what I'm gonna show you in this lecture so
+let's start by defining a function call it save user here we add one parameter
+user but instead of one asterisk we use double asterisks
+so first let's print this user parameter here and see what we get when we call
+this function so save underline user now instead of passing an arbitrary number
+of arguments here we should pass an arbitrary number of keyword arguments
+remember keyword arguments name a codes value so here we can pass multiple
+properties about a user for example we can pass ID equals 1 name equals admin
+and so on so here we have two keyword arguments let's run this program and see
+what we get when we call this function I'll save the changes and run this is
+what we get look at the syntax here we have curly braces and in between them we
+have multiple key value pairs here's the first one here is the second one this is
+what we call a dictionary if you're a JavaScript developer this
+syntax is familiar too this is like an object in JavaScript now
+if you're not familiar with JavaScript objects or dictionaries in general
+don't worry later in the course you have a comprehensive section about data
+structures in Python and there I'm gonna cover lists tuples dictionaries and so
+on now to finish up this example here we can use square bracket notation to get
+the ID or name of a user let's run this program one more time so ID is 1 and
+name is admin beautiful in Python we have two types of variables
+local variables with the function scope and global variables with the file scope
+so in this example this message variable is a local variable in the greet
+function its scope is the greet function so we can access it anywhere in this
+function now in Python unlike languages like C sharp or
+JavaScript we don't have block level scope so if we define this variable
+inside of an if block it is still accessible outside of that block let me
+show you so here I'm gonna add if true colon inside of this if block you're
+defining the message variable but still accessible outside of the if block so
+here we can print message the same applies if we have a loop here a for
+loop or a while loop so in Python we don't have block level scope no matter
+where we define a variable in a function it is always accessible in that function
+after it is defined so that's all about our local variables now let's talk about
+global variables if we put this message variable outside of this function now
+it's a global variable so it's accessible anywhere in this point in any
+functions so here in the greet function we can print it on the terminal let's
+take a look so here recall greet run the program we get a now let me show you
+something interesting here the greet function I'm gonna assign a new value to
+the message variable let's set it to be run the program again obviously we get B
+however if I bring this print statement outside of this function and run the
+program again let's see what happens we get a what's going on here didn't we
+change the value of the message variable not really in this case this message
+variable becomes a local variable in the greet function because by default python
+enforces good programming practices as you probably know
+global variables are evil we shouldn't change them in a function because this
+can cause a side effect in other functions so in this case when python
+interpreter sees line 5 it will create a new local
+variable called message even though it has the same name as our global variable
+on line 1 these two are completely separate now I've seen some tutorials
+and books teaching you bad programming practices they show you how to modify
+the value of a global variable inside of a function so this is how we do it we
+use the global keyword and reference the message variable when Python interpreter
+sees this it will realize that in this function we don't want to create a local
+variable we want to use the global message variable that we defined earlier
+now if we run this code instead of a we're gonna get B because the changes
+will be visible after we exit this function and that is the reason I said
+you should avoid using global variables or if you really want to use them make
+sure not to modify them inside of a function because this can create a side
+effect in other functions maybe other functions rely on the original value of
+that variable so avoid using the global statement it's a bad practice it's evil alright let's finish up this section by
+looking at debugging in vs Co so I had this simple program with this multiply
+function that we talked about earlier if you want to follow along with me head
+over to bit Dudley /pi gist GIS T here on github you can see my guest
+simply copy paste this code we're going to use this code to explore debug in vs
+Co so below this function we have three statements to print start the result of
+calling the multiply function and print finish so to start debugging first we
+need to add a breakpoint so here on line eight you can use your mouse to put a
+breakpoint here or if you have taken any of my courses before you know that I
+always put a lot of emphasis on using your keyboard because professional
+developers use their keyboard not their mouse
+so using f9 you can add or remove a breakpoint now open up the debugging
+panel here on the top click this icon here this will create a JSON file called
+launch that JSON with a bunch of configuration for debugging you can see
+this file in the project folder inside of this vs code folder here is launched
+at JSON now you never have to touch this file we just have to create it the first
+time now let's close this back to the debugging panel now after this file is
+created in this drop-down list you can see various configuration options for a
+debugging session from this list select python current file integrated terminal
+so we're going to debug the current file in the terminal that is integrated
+inside of vs code there is also another one with an external terminal now to
+start a debugging session press f5 so here on the right side you can see my
+integrated terminal I'm going to close this because it's cluttering the view so
+so here is the breakpoint activate it now we are on this line we can step over
+eight by pressing f10 if you're on a Mac keyboard you should hold the function
+key that is on the bottom left corner of your keyboard so step over now on line 9
+we are calling a function so we want to step into this function to see what is
+going on there for this press f11 now here we are inside of the multiply
+function on the left side inside the variables panel you can see the
+variables that are local in this scope so we have numbers which is the argument
+passed to this function let's step over one more time at f10 now we are at the
+beginning of our loop one more time f10 now at this point you can see a few
+other variables here so we have our total we have the current number that is
+picked in this iteration you can also create watches here if you want to look
+at the value of a variable that is not listed in this panel now let's say you
+inspected all the variables and you want to step out of this function to do that
+press shift and f11 now we are out back on line 9 f10 one
+more time and one more time and the debugging session is finished alright let's finish up this section by
+looking at a few very useful shortcuts for writing code fast first I'm going to
+show you the shortcuts for Windows users and in the next lecture we will look at
+the shortcuts for Mac so if you're a Mac user feel free to skip this lecture so
+here we are on line 9 and my cursor is right at the beginning of the line let's
+say you want to move the cursor to the end of the line instead of pressing the
+right arrow to go all the way to the end we can simply press the end key and here
+is the cursor or if you want to move the cursor to the beginning of the line
+simply press the HOME key there you go similarly if you want to move the cursor
+to the beginning of the file press ctrl + home here it is or ctrl + end/2 go to
+the end of the file now let's say we want to move this line up instead of
+cutting it from here and then copying it somewhere else we can simply move it up
+by pressing Alt + the up or down arrows or if you want to move these two lines
+up and down simply select them then hold alt and then up or down very easy now if
+you want to duplicate a line or multiple lines simply select them now hold down
+shift alt and then press a down key we can duplicate it as many times as you
+want there you go here's another useful shortcut if you want to convert this
+line or maybe these two lines into a comment simply hold down control and
+press slash using the same shortcut you can remove the comment so you can toggle
+it very easy and finally if you want to type the name of a variable or a
+function like multiplied you don't have to type all characters here are a few
+ways to type this quickly we can just type the first few characters and here
+in the intellisense you can see that so if you press ENTER this is what we call
+auto-completion here's another way so instead of writing
+the first few letters you can just pick any letters in sequence and type them so
+I can type mty or I can just type mpy or why there you go here it is so I hope
+you enjoyed these shortcuts and thank you for watching alright now let's take a look at the
+shortcuts for a Mac keyboard so here we are on line 9 and my cursor is right at
+the beginning of the line if you want to move the cursor to the end of the line
+instead of using the right arrow to go all the way simply hold down the
+function key and press right here it is or you can press function and left to
+jump to the beginning of the line similarly you can press function and up
+to go to the top of the file or function and down to jump to the end of the file
+pretty useful now let's say you want to move this line up instead of cutting it
+from here and then copying it somewhere else you can simply move it up by
+holding down alt or option and then pressing the up arrow or down very easy
+or we can select these two lines hold down the alt or option key move it up or
+down here's another useful shortcut we can
+convert these two lines into a comment by pressing command and slash and then
+we can remove the comment using the same shortcut so we can toggle it and finally
+if you want to type the name of a variable or a function like multiply you
+don't have to type all the letters like multiply that is very slow you can type
+the first few letters like mult and here in the intellisense you can see it's
+selected so press Enter or you can pick any characters in sequence and type them
+like mty here it is or we can type an py or m TP so you can abbreviate it any way
+you want I hope you enjoyed these shortcuts and thank you for watching one of the questions that often comes in
+programming interviews is the fizzbuzz algorithm you might be surprised that
+there are a lot of developers out there with even years of experience but they
+don't know how to solve this simple programming problem that's why I decided
+to include this in my course so let's see how this algorithm works and then
+you can spend 10 to 15 minutes on this exercise on your own so here we have a
+function fizz buzz that takes an input and depending on the input we give it it
+returns different results here are the rules if the input that we give it is
+divisible by 3 it will return the string fist let me show you so we run this
+program we get fizz if the input is divisible by 5 it will
+return buzz take a look here's buzz now the third
+rule if the input is divisible by both 3 and 5 it will return fizzbuzz so let's
+pass 15 here we'll get fizzbuzz for any other numbers it will return the same
+input so if I pass 7 it's not divisible by 3 or 5 it will return 7 itself so
+spend 10 to 15 minutes on this exercise you will see my solution next all right let's see how we can solve
+this problem so we get the input and check to see if input is divisible by 3
+then we can set a variable like result to phase
+now let me temporarily simplify these rules because I want to show you a
+really cool technique so let's imagine if the input is divisible by 3
+we'll return fizz otherwise we'll return bus so elves : we set the result to buzz
+and finally we'll return this result variable
+this is one way to implement these rules but it's not the best way there is a
+better and cleaner way let me show you so instead of defining this result
+variable and then returning it we can simply return this string here and also
+here and then we can get rid of line six so we remove one unnecessary line of
+code this was one technique the other technique I want to show you is when you
+have an if statement and in your if block
+you're returning a value you don't really need an else clause because if
+this condition is evaluated to false the control moves to the else clause and all
+we're doing here is returning a different value so this is the only
+possible outcome so here we can remove this else clause and simply return bus
+so with this technique I remove an unnecessary indentation as well I've
+made our code more linear okay now let's go back to our original algorithm so if
+the input is divisible by three we'll return fizz now we check to see if the
+input is divisible by five we'll return buzz so here we don't really need an
+Elif because if this condition is false we'll get here anyway
+so we can check if input is divisible by five we will return buzz once again if
+this condition is false the control moves here now we check to see if the
+input is divisible by three and it is also divisible by five then we will
+return fizz buzz now this expression is a little bit long I would prefer to make
+it more readable by putting parentheses around the first and second parts like
+this that is cleaner now if this condition is also false the control
+moves here that means our number is not divisible by three or five so we should
+simply return input once again we don't need an else
+or another if we simply return the input now let's run this program and see if
+it's working properly or not so we call our function with three and we get fizz
+beautiful let's call it with five we get Buzz perfect what if we call it with 15
+we should get fizz bus however we get fees what is going on here the reason
+this happened was because when we pass 15 here line two is executed
+obviously 15 is divisible by three so that is why we immediately return fizz
+to solve this problem we need to move this condition which is more specific to
+the top so I've selected these two lines using alt + up I move these lines up
+beautiful all right now let's run the program one more time
+so we get fizzbuzz once again let's test it with three now we get fares let's
+test it with five when writing functions don't assume that your function is
+working make sure to test it with all different kinds of values let's test it
+with five we get Buzz beautiful what if you pass seven which is not divisible by
+three or five we get seven beautiful so what you see here is the simplest and
+most elegant implementation of the fizzbuzz algorithm and that brings us to
+the end of this section in the next lecture we're going to explore data
+structures in Python you're going to learn about lists tuples
+sets and dictionaries I hope you enjoyed this section and thank you for watching you you made it this far and that makes me
+think that you're really enthusiastic about learning Python so I highly
+encourage you to enroll in my complete Python course where we go way beyond
+this crash course you will learn how to use Python in real-world scenarios such
+as data analysis and visualization automating repetitive boring tasks that
+involve working with files and folders spreadsheets PDFs data compression
+sending emails web crawling consuming api's and much much more this course
+comes with a 30 day no questions asked money back guarantee and a certificate
+of completion if you're interested click the link below this video to access the
+course once again thank you for watching please support me by liking and sharing
+this video and also subscribe to my channel to get free new videos every
+week thank you and have a great day

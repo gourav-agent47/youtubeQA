@@ -1,0 +1,23 @@
+Title: Python Exercises for Beginners - Exercise #1 Alright! Time for an exercise. I want you
+to write a program to display the even numbers between 1 to 10. So when you run
+this program you should see 2 4 6 and 8 and after these I want you to print this
+message we have 4 even numbers now here is a quick hint before you get started
+you should call the range function with 1 and 10 do not use the third argument
+which is called step so basically I want you to iterate over all the numbers we
+can want to tab check if each number is an even number and then print it on the
+terminal so pause the video spend two minutes on this exercise when you're
+done come back continue watching so we started with a four loop for a
+number in range one to ten : we check to see if the remainder of division of this
+number by two equals zero so if number modulus 2 equals zero then
+we print this number now let's run this program so we get two
+four six eight beautiful now to count the even numbers we need a separate
+variable so let's call that count initially we set it to zero now in this
+if block every time we find an even number we need to increment count so we
+set count plus equals one and finally after our for loop we can print a
+formatted string we have count even numbers let's run the program and here's
+the result hi guys thank you for watching this
+tutorial my name is muhammad ani and i have tons of tutorials like this for you
+on my channel so be sure to subscribe and also please like and share this
+video if you want to learn Python properly from scratch with depth I have
+a comprehensive python tutorial for you the link is below this video so click
+the link to get started thank you and have a fantastic day

@@ -1,0 +1,317 @@
+Title: Python Functions  Python Tutorial for Absolute Beginners #1 so far you have learned how to use some
+of the built-in functions in Python such as print round and so on in this section
+you're gonna learn how to write your own functions now you might ask but why do
+you even need to write our own functions well when you build a real program that
+program is going to consist hundreds or thousands of lines of code you shouldn't
+write all that code in one file like we have done so far you should break that
+code into smaller more maintainable and potentially more reusable chunks we
+refer to these chunks as functions so let me show you how to create your own
+custom functions we start with the DEF keyword which is short for define next
+we need to give our function and name so let's call this greet all the best
+practices you'll learn about naming your variables also apply to naming your
+functions so make sure your function names are meaningful descriptive use
+lowercase letters to name your functions and an underscore to separate multiple
+words now after the name we need to add parentheses you will see why shortly and
+then we'll add a colon now what is going to happen you know it you're gonna get
+indentation which means the following statements will belong to this function
+so here I'm gonna add two statements hi there and welcome aboard both designs
+belong to this function because they're indented now we're done with this
+function we need to call it so we remove the indentation and we add two line
+breaks after this function this is what Papp 8 recommends to keep our code clean
+and maintainable now if you forget to add two line breaks don't worry as soon
+as you save the changes auto-pay of eight will automatically add these line
+breaks for you let me show you so I'm gonna remove these line breaks and call
+this function create with parentheses just like how we call the built-in
+functions now save the changes there you go so we get
+two line breaks after our function now let's run this program so we get these
+two messages on a terminal now here is a question for you what is
+the difference between the greed and trent functions the difference is that
+this print function takes an input whereas our greet function doesn't take
+any inputs so let me show you how to pass inputs like first name and last
+names of this function when defining a function in between parentheses will
+list our parameters so here we add two parameters like first under like name
+and last underline name now when calling this function we need to supply two
+values for those parameters we refer to them as arguments so maash Hamadan e
+these are the arguments to the greet function that's one of the terms that a
+lot of developers out there don't know they don't know the difference between
+parameters and arguments a parameter is the input that you define for your
+function whereas an argument is the actual value for a given parameter okay
+now let's change line two and instead of saying hi there we can greet a person by
+their full name so we can convert this to a formatted string and has two fields
+here first name as well as last name save the changes run the program and
+this is what we get in terminal now this function is more useful we can reuse it
+and call it with different arguments so let's greet John Smith as well run
+the program so we get hi Muhammad on e and hi John Smith now note that by
+default all the parameters that you define for a function are required so
+here our greet function takes two parameters if I exclude one of these
+arguments and save the changes you can see we have this red underline so pilant
+is complaining and saying there is no value for argument last name also if we
+run the program we get this type error greet missing one required positional
+argument so let's put this back now later I will
+show you how to define optional parameters so this is the simplified version of
+this greet function with created earlier now in programming we have two types of
+functions functions that perform a task and functions that calculate and return
+a value here are some examples both the print and greet functions are examples
+of type 1 the performing a task which is printing something on the terminal
+in contrast the brown function is an example of a function that calculates
+and returns a value so the functions that you create fall into these two
+categories now let me show you how to rewrite this great function but in the
+second form so instead of printing this string on the terminal we simply return
+it let me show you so I'm gonna delete all this code define a new function but
+call it get underline greeting we add the name parameter and simply return
+this formatted string high name that's all we have to do so we use the return
+statement to return a value from this function now we can call this function
+get underlined greeting pass a name like Maj because it returns a value we can
+store that value and a separate variable like message now you might be curious
+which form of this greeting functions is better well with this first
+implementation we are locked to printing something in the terminal in the future
+if you want to write that message in a file or send it in an email we have to
+create another function so we cannot reuse this greet function in other
+scenarios in contrast this second form is not tied to printing something on the
+terminal it simply returns a value now we get this value and we can do whatever
+we want with it we can print it on the terminal or we can use the built-in open
+function to write this message to a file so we can create a
+I like Content txt open it for writing this returns a file object and then we
+can call file the right message now don't worry about these two lines later
+in the course I'm gonna talk about working with files but what I want you
+to take away here is that we have this message variable and we can do whatever
+we want with it we can print it on the terminal write it to a file send it in
+an email and so on and one more thing before we finish this lecture so here's
+our greet function and as you can see we're simply printing a string now if we
+call great give it a name run the program we get this message hi Maj but
+what if we put this inside of a call to the print function let's see what we get
+we get high Marsh followed by none what is this none is the return value of the
+greet function so in Python all functions by default return the non
+value none is an object that represents the absence of a value later in the
+course you're gonna learn more about not what matters now is that all functions
+return non by default unless you specifically return a value so here if
+we return some string none will no longer be returned now I just want to
+clarify something earlier I told you that we have two types of functions in
+programming functions that carry out the tasks or functions that calculate and
+return a value so back to the code we previously had so even though this
+function returns none by default it is still classified as a function that
+carries out a task let's create another function we call it
+increment you want to use this function to increment a number by a given value
+so here we simply return number plus by now we can call this function like this
+increment two and one this returns a value so we can store it in a variable
+like result and then print it on the terminal let's run the program we get
+three beautiful now we can simplify this code we have used this result variable
+only in a single place that is line six so we don't really need it so on line
+six we can replace result with a call to increment function like this so when
+python interpreter executes this code first it will call the increment
+function it will get the result and temporary store it in a variable for us
+we don't see that variable and then it will pass that variable as an argument
+to the print function now if we run this program we get the exact same result
+beautiful now we can make this code more readable if someone else looks at line
+five they may not know exactly what these arguments are for we can use a
+keyword argument to make this code more readable so this one here is the value
+of this by parameter we can prefix it with the name of the parameter like this
+now we can read this code almost like playing English increment two by one so
+if you're calling a function with multiple arguments and it's not quite
+clear what is arguments are for you can make your code more readable by using
+keyword arguments so here y equals one is a keyword argument earlier I told you that all the
+parameters that you define for a function are required by default in this
+lecture I'm gonna show you how to make the by parameter optional so let's say
+we don't want to explicitly pass by equals one every time we want to call
+this increment function you want to use this function to increment a value by
+one so we remove the second argument now we need to give this parameter a default
+value so we set it to one now if we call this function and don't supply the
+second argument this default value will be used otherwise the value that we
+specify here will be used let me show you so we run this program the result is
+three but if we pass the second argument here we'll increment two by five so we
+will get seven so you can see it's pretty easy to make a parameter optional
+just be aware that all these optional parameters should come after the
+required parameters in other words I cannot add another required parameter
+here let's call that another I cannot add that here if I save the changes you
+can see we get a red underline here so all the optional parameters should come
+after the required parameters now obviously in this case we don't need the
+second parameter so let's delete it there are times that you may want to
+create a function that takes a variable number of arguments here is an example
+let's define this function multiplied that takes two parameters x and y and
+simply returns x times y now we can call this function like this
+so far so good but what if you want to pass one or two more arguments here that
+doesn't work because our multiply function takes only two parameters to
+solve this problem we need to replace these two parameters with a single
+parameter we use a plural name here to indicate that this is a collection of
+arguments and then we prefix it with an asterisk this is the magical part let me
+show you what happens when you use an asterisk here so temporarily let's
+delete this line and simply print numbers let's see what we get here so
+run the program we can see all our arguments and they're packed in
+parentheses what is this well earlier you learned about lists I briefly
+mentioned that you can use square brackets to create a list of objects
+like 2 3 4 5 now later in the course we have a comprehensive section about lists
+so don't worry about the details of lists and how they work but what I want
+you to note here is that the only difference between this list and what we
+have here is in the notation so use square brackets to create lists and
+parentheses to create topples some people call it two poles or two poles so
+a top pole is similar to a list in that it's a collection of objects the
+difference is that we cannot modify this collection we cannot add a new object to
+this topple once again later in the course we're going to have
+a comprehensive section about lists tuples and other data structures what
+matters now is that these topples just like lists are each ruble so we can
+each rate over them which means we can use them in loops let me show you so
+let's write for number in numbers : let's just print one number at a time
+actually we don't need this line delete and run the program so we iterate over
+this topple and in each iteration we get one number and print it on the terminal
+so now with a simple change we can calculate the product of all
+numbers all we have to do is to define a variable like total initially we set it
+to 1 and then in each iteration we get total and multiplied by the current
+number or we can rewrite this statement using an Augmented assignment operator
+so total times equal number line 5 and 4 are exactly identical so I'm gonna use
+line 5 because it's shorter and cleaner delete and finally we'll return the
+total now one of the issues I see often in beginners code is that they don't use
+this indentation properly so they put the return statement here and then they
+wonder why their function doesn't work properly if you put the return statement
+here it will be part of the for loop so it will be executed in each iteration in
+this case after the first iteration because of this return statement we'll
+return from this multiply function so the total will not be calculated
+properly we need to put this at the same level of indentation as other statements
+in this function so here we have our for statement we loop over all the numbers
+we calculate the total and then finally return it so with this implementation we
+can get the result and printed on the terminal let's run the program and you
+can see the product of these numbers is 120 so in the last lecture you learned the
+syntax to pass a variable number of arguments to a function we have a
+variation of this syntax with double asterisk and that's what I'm going to
+show you in this lecture so for this demo let's rename this function to save
+underline user and rename the argument to user so let's imagine we're gonna use
+this function to save information about a user now in this function let's just
+print this user argument we're done with our function let's call it save
+underline user now instead of passing arbitrary arguments here we can pass
+arbitrary keyword arguments remember keyword arguments so we have name equals
+value so here we can add multiple keyword arguments like ID equals 1 name
+equals John age equals 22 and so on so we are passing 3 keyword arguments to
+this function now let's run this program this is what we get look at the syntax
+we have these curly braces and in between them we have multiple key value
+pairs so key colon value comma here's another key value pair and here
+is the last one this object you see here is called a dictionary
+it's another complex type or a data structure in Python and I'm going to
+talk about that in detail later in the course for now all I want you to take
+away is that when we use double asterisk here we can pass multiple key value
+pairs or multiple keyword arguments to a function and Python will automatically
+package them into a dictionary so this user object here is a dictionary now
+using the bracket notation we can get the value of various keys in this
+dictionary so we can print user square brackets we pass a string and this is
+the name of our key like ID let's run the program we get 1 or we can access
+the value of name key the program so name is John so this is
+how deeksha Mary's work in programming we have a very important
+concept called scope which refers to the region of the code where a variable is
+defined so in this example we have this message variable the scope of this
+variable is the greet function it only exists inside of this function so if we
+go outside of this function and try to print message see what happens as soon
+as I save the changes we get this red underlined undefined variable message
+and if we run our program we get this name error name message is not defined
+the same rule applies to the parameters of our functions so if you add a name
+parameter here and then try to print it outside of the greet function we get the
+same error so the scope of the name and message variables are the greet function
+and we refer to these variables as local variables in this function they're local
+in this function which means they don't exist anywhere else
+and that means we can have another function let's say send email with a
+parameter with the same name here we can have a message variable but this message
+variable is completely different from the message variable we have in the
+greet function and of course the same rule applies to the name parameters in
+these functions they are completely separate these local variables have a
+short lifetime so when we call let's say the greet
+function and pass a name Python interpreter will allocate some memory
+and have the name and message variables reference those memory locations when we
+finish executing the greet function because these variables are not
+referenced or used anywhere else eventually they get garbage collector
+which means python interpreter will release the memory that allocated for
+these variables so these are the local variables in contrast to local variables
+we have global variables so if we move this message variable outside of
+great function now it's a global variable which means it's accessible
+anywhere in this file so the scope of this variable is this file we can use it
+anywhere in this file in any functions or outside of a function now for this
+reason global variables stay in memory for a longer period of time until they
+are garbage collected and you should not use them that often
+in fact global variables are really evil so as a best practice create functions
+with parameters and local variables now what if here in the greet function
+we set message to let's say B now let's delete this second function we don't
+really need it for now so we call the greet function in this function we
+assign a new value to the message variable now let's print this message
+and see what we get what do you think we're gonna get well
+let's take a look we get a but do we change the value of message variable to
+be not really because by default python interpreter
+treats this message variable as a local variable in the greet function even
+though it has the same name as the global variable and we have on line one
+so these two variables are separate now I've seen some tutorials or even books
+teaching you bad practices for example they show you how to modify the value of
+this global message variable inside of a function let me show you how to do that
+but remember this is a bad practice and you should avoid it at all times I will
+explain the reason in a second so these tutorials or books teach you to use the
+global keyword here and reference the message variable when python interpreter
+sees this line it will realize that in this function we want to use the global
+message variable so it will not define a local variable in this function now with
+this change if we run our program you can see we get beyond the terminal
+because in this function we are modifying the value of the global
+message variable why is this bad because it is possible that you might have
+multiple functions that rely on the of this global variable if you're
+accidentally or deliberately change the value of this global variable in one
+function this might have a side effect in other functions those functions may
+not behave properly and this way we can create a bug in our program so global
+variables have always been bad this is not a Python thing this is a discussion
+that's been going on for decades avoid them as much as you can or if there are
+situations that you really need to define a variable globally in a file
+that's okay but do not modify it in a function as you see here this is a
+really bad practice so that's all about local and global variables one of the questions that often comes in
+programming interviews is the fizzbuzz algorithm you might be surprised that
+there are a lot of developers out there with even years of experience but they
+don't know how to solve this simple programming problem that's why I decided
+to include this in my course so let's see how this algorithm works and then
+you can spend 10 to 15 minutes on this exercise on your own so here we have a
+function phase buzz that takes on input and depending on the input we give it it
+returns different results here are the rules if the input that we give it is
+divisible by 3 it will return the string fist let me show you so we run this
+program we get Fitz if the input is divisible by 5 it will return Buzz take
+a look here's buzz now the third rule if the input is divisible by both 3 & 5 it
+will return fizzbuzz so let's pass 15 here we'll get fizzbuzz for any other
+numbers it will return the same input so if I pass 7 it's not divisible by 3 or 5
+it will return 7 itself so spend 10 to 15 minutes on this exercise you will see
+my solution next all right let's see how we can solve
+this problem so we get the input and check to see if input is divisible by 3
+then we can set a variable like result to phase
+now let me temporarily simplify these rules because I want to show you a
+really cool technique so let's imagine if the input is divisible by 3
+we'll return fizz otherwise we'll return bus so LS : we set the result to buzz
+and finally we'll return this resolved variable
+this is one way to implement these rules but it's not the best way there is a
+better and cleaner way let me show you so instead of defining this result
+variable and then returning it we can simply return this string here and also
+here and then we can get rid of line six so we remove one unnecessary line of
+code this was one technique the other technique I want to show you is when you
+have an if statement and in your a flock you're returning a value you don't
+really need an else clause because if this condition is evaluated to false the
+control moves to the else clause and all we're doing here
+is returning a different value so this is the only possible outcome so here we
+can remove this else clause and simply return bus so with this technique I
+remove an unnecessary indentation as well I've made our code more linear okay
+now let's go back to our original algorithm so if the input is divisible
+by three we'll return fizz now we check to see if
+the input is divisible by five we'll return buzz so here we don't really need
+an Elif because if this condition is false we'll get here anyway
+so we can check if input is divisible by five we will return buzz once again if
+this condition is false the control moves here now we check to see if the
+input is divisible by three and it is also divisible by five then we will
+return fizz buzz now this expression is a little bit long I would prefer to make
+it more readable by putting parentheses around the first and second parts like
+this that is cleaner now if this condition is also false the control
+moves here that means our number is not divisible by three or five so we should
+simply return the input once again we don't need an else
+or another if we simply return the input now let's run this program and see if
+it's working properly or not so we call our function with three and we get fizz
+beautiful let's call it with five we get buzz perfect what if we call it with 15
+we should get fizz bus however we get fizz
+what is going on here the reason this happened was because when we pass 15
+here line two is executed obviously 15 is divisible by three so that is why we
+immediately return fizz to solve this problem we need to move this condition
+which is more specific to the top so I've selected these two lines using alt
++ up I move these lines up beautiful alright now let's run the program one
+more time so we get fizzbuzz once again let's test it with three now we get
+fares let's test it with five when writing functions don't assume that your
+function is working make sure to test it with all different kinds of values let's
+test it but five we get Buzz beautiful what if you pass seven which is not
+divisible by three or five we get seven beautiful hi guys thank you for watching this
+tutorial my name is Mohammad Ani and I have tons of tutorials like this for you
+on my channel so be sure to subscribe and also please like and share this
+video if you want to learn Python properly from scratch with depth I have
+a comprehensive python tutorial for you the link is below this video so click
+the link to get started thank you and have a fantastic day

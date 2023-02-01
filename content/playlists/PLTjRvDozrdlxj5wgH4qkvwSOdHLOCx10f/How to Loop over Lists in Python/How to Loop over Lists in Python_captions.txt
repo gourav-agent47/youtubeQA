@@ -1,0 +1,33 @@
+Title: How to Loop over Lists in Python In this lecture, I'm gonna show you how
+to loop over lists. So here we have a list of three items we can use our four
+loops to loop over this list so for letter in letters : and then we print
+each letter save the changes and run the code we get ABC now what if you want to
+get the index of each item as well well we have a built-in function called
+enumerate we call it here and this will return an enumerator object which is
+iterable in each iteration this enumerate object will give us a tapa let
+me show you so now when we run this code look in each iteration we're getting a
+topple so a topple as I told you before is like a list but it's read-only we
+cannot add new items to it so in each iteration we're getting a topple of two
+items the first item in this couple is the index and the second item is the
+item at that index so now to get the index we can use square brackets to
+access the first item in this topple so if we print letter of 0 we will get the
+indexes and right next to that we can add letter of 1 so we will see the item
+had a given index but this syntax is a little bit ugly
+in the last lecture you'll learn about list unpacking so if we have a list with
+two items 0 and a we can unpack it into two variables like this index comma
+letter equals items so here we are unpacking the items list now what if we
+change square brackets to parenthesis now we have a topple and we can still
+unpack this topple so you saw that this enumerate function returns an enumerate
+object which is a durable in each iteration this enumerated object will
+return a topple that looks like so we can unpack it right here so we add
+another variable index now with this we no longer have to use square brackets
+and we can simply print index and letter let's run this code there you go
+so now we don't need this anymore so to recap you can use for loops to iterate
+over lists if you also need the index you should call the enumerate function
+this will return an enumerator object which is iterable in each iteration it
+will return a topple and you can unpack that topple right here hi guys thank you for watching this
+tutorial my name is Mohammad Ani and I have tons of tutorials like this for you
+on my channel so be sure to subscribe and also please like and share this
+video if you want to learn Python properly from scratch with depth I have
+a comprehensive python tutorial for you the link is below this video so click
+the link to get started thank you and have a fantastic day

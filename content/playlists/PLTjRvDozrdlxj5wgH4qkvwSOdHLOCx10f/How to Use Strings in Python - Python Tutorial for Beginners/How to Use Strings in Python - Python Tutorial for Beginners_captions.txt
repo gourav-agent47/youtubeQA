@@ -1,0 +1,168 @@
+Title: How to Use Strings in Python - Python Tutorial for Beginners so here we have this course variable set
+to Python programming as I told you before whenever you work with text you
+should surround your text with quotes you can either use double quotes or
+single quotes that's more of a personal preference but quite often we use double
+quotes you also have triple quotes and we use
+them to format a long string for example if you have let's say a variable message
+that is the message we want to include in the body of an email
+you can use triple quotes to format it like this hi John this is Marsh from
+code with marsh comm blah blah blah so that's when we use triple quotes now we
+don't need this in this lecture so delete let me show you a few useful
+things you can do with strings first of all we have this built-in function in
+Python for getting the lengths of strings what is a function a function is
+basically a reusable piece of code that carries out a task as a metaphor think
+of the remote control of your TV on this remote control you have buttons for
+different functions like turn on turn off change the channel and so on these
+are the built-in functions in your TV in Python and many other programming
+languages we have the exact same concept so we have functions that are built into
+the language on the platform you can reuse these functions to perform various
+tasks so here we can use the built-in Len function to get the length of a
+string which means the number of characters in that string now whenever
+you want to use a function you should use parentheses now we say you're
+calling this function which basically means we are using this function now
+some functions take additional data which we refer to as arguments these
+arguments are inputs to these functions so this Len function takes an input or
+an argument here we pass our course variable and this will return the number
+of characters in this string so let's print that and see what we get run the
+program we get 18 because we have 18 characters here let's look at another
+example if you want to get access to a specific character in this string you
+use the square bracket notation so here we add course square brackets to get the
+first character you use the index 0 so in Python like many other languages
+strings are 0 index which means the index of the first
+actor or the first element is zero so now when we print this we'll get P okay now you can also use a
+negative index like minus one what does that mean
+well if zero represents the first character here what do you think
+negative one represents that takes us back to the end of this string so that
+returns the first character from the end of this string let's run this program
+you will see it will get G there you go using a similar syntax you can slice
+strings let me show you so I'm gonna duplicate this line and remove negative
+one now let's say we want to extract the first string characters in this string
+so here we need two indexes the start index colon the end index so this will
+return a new string that contains the first three characters in this course
+variable that will be P Y and T so the index of these characters are 0 1 & 2 so
+that means the character at the end index is not included ok let's run the
+program and make sure we get the right result there you go
+py T now what if we don't include the end index what do you think we're gonna
+get it's common sense we start from index 0 and go all the way
+to the end of this string so this will return a new string that is exactly the
+same as the original string let's take a look so we get python programming now
+what if we don't include the start index but include the end index what do you
+think we're gonna get once again it's common sense so by default Python will
+put 0 here so it will start from the beginning of this string so when I run
+this program we should get py t one more time there you go and finally as the
+last example if we don't include the start
+and the end index this will return a copy of the original string let's look
+at this so we get Python programming now you don't have to memorize any of these
+just remember we use the Len function to get the length of a string we use
+bracket notation to get access to a specific element or a specific character
+and we use this notation to a slice a string so we have this string here Python
+programming now let's say we want to put a double quote in the middle of this
+string there is a problem here Python interpreter sees this second
+string as the end of the string so the rest of the code is meaningless and
+invalid how do you solve this problem well there are two ways one way is to
+use single quotes for our string and then we can use a double quote in the
+middle of this string but what if for whatever reason perhaps for being
+consistent in our code we decided to use double quotes how can we add another
+double quote in the middle of this string well we can prefix this with a
+backslash backslash in Python strings is a special character we have a jargon for
+that called escape character we use it to escape the
+character after let me show you what I mean so let's print this course and run
+this program what's going on here we don't have the backslash because we use
+that to escape this double code and basically displayed here so backslash is
+an escape character and backslash double quote is an escape sequence in Python
+strings we have a few other escape sequences that you should be aware of
+let me show you so in Python we use a high sign to indicate a comment a
+comment is like additional note that we add to our program it's not executed by
+Python interpreter okay so here are the escape sequences you
+have seen backslash double quote we also have backslash single quote so we can
+use that to add a single code here let's run the program here it is beautiful we
+also have double backslash so if you want to include a backslash in your
+strings you should prefix it with another
+backslash let me show you so when we run this
+we get python one backslash programming and finally we have backslash n which is
+short for newline so now if I add a backslash n here see what we get we get
+a new line after Python so programming will end up on the second line so these
+are the escape sequences in Python here we have two variables first and
+last let's say we want to print my full name on the console so we can define
+another variable full set it to first then concatenate it with a space and one
+more time concatenate it with last now when we print full we get my full name
+on the console beautiful now this approach are using concatenation to
+build a string is okay but there is a better and newer approach we can use
+formatted strings so here we can set full to this string and prefix it with
+an F which can be lowercase or uppercase this formatted string doesn't have a
+constant value like these two strings here it's actually an expression that
+will be evaluated at runtime so here we want to add our first name we use curly
+braces to print the value of the first variable after that we had a space and
+then we add curly braces one more time to print the last name so at runtime
+this expression will be evaluated what we have in between curly braces will be
+replaced at runtime now let's run this program one more time we get the exact
+same result just be aware that you can put any valid expressions in between
+curly braces so earlier you learned about the built-in Len function we can
+call Len here to get the length of this string let's run this program one more
+time so we get four we can also replace last with an expression like there's two
+plus two let's run this program we get four and four so when using formatted
+strings you can put any valid expressions in between curly braces in this lecture we're going to look at a
+few useful functions available to work with strings so earlier you learned
+about this built-in Len function this function is general-purpose so it's not
+limited to strings later I will show you how to use this function with other kind
+of objects but in Python we have quite a few functions that are specific to
+strings let me show you so here if we type
+course dot C all these are functions available on strings now in precise
+terms we refer to these functions as methods this is a term in
+object-oriented programming that you will learn about later in the course for
+now what I want you to take away is that everything in Python is an object and
+objects have functions we call methods that we can access using the dot
+notation so here course is an object we use the dot notation to access its
+functions or more accurately methods let's take a look at a few of these
+methods we have upper to convert a string to uppercase now let's print this
+and run the program here is what we get beautiful now note that the metals that
+you call here return a new string so the original string is not affected let me
+show you so print course run the program one more
+time look this is our original string right so course the upper returns a new
+string a new value we can store it in a variable like chorus underline capital
+like this now to keep this demo simple and consistent I'm gonna revert this
+back and use a print statement we also have the lower method to convert a
+string to lowercase we also have title which will capitalize the first letter
+of every word so if our string was like this when we
+call the title method we get Python programming as you see here okay another
+useful method is strip and we use it to trim any white space at the beginning or
+end of a string this is particularly useful when we receive input from the
+user let me show you so let's imagine the
+user entered a couple of white spaces at the beginning of this string when we
+call course that strip those white spaces will be removed
+take a look so note that in the first three examples we have those white
+spaces but in the last one it is removed so a strip removed the whitespace from
+both the beginning and end of a string we also have L strip which is short for
+left strip and our strip which is short for right strip so it will remove the
+white space from the end of a string if you want to get the index of a character
+or a sequence of characters in your string you should use the find method &
+masaya so course that find so as an argument here we pass another string we
+can pass a character or a series of characters let's find the index of Pro
+run the program so the index of Pro is 9 so if you start from 0 here all the way
+to 9 this is the index of Pro ok now as I told you before python is a case
+sensitive language so if I pass a capital P here obviously we don't have
+these exact characters in our string so let's see what we get we get negative 1
+that means this string was not found in the original string another useful
+method is replace so we call replace with this we can replace a character or
+a sequence of characters with something else so let's say we want to replace all
+lowercase peas with J with this we get Jai Thunderer cramming whatever that
+means and finally if you want to check for the
+existence of a character or a sequence of characters in your string you can use
+the in operator let me show you so print rewrite an expression like this throw in
+course so this is an expression as I told you before an expression is a piece
+of code that produces a value so this expression checks to see if we have Pro
+in course the difference between this expression and calling the find method
+is that the find method returns the index of these characters in our string
+but as this expression returns a boolean so it's a true or false let me show you
+so run the program we get the boolean true and finally we have the not
+operator and we use that to see if our string does not contain a character or
+sequence of characters so let's change this to swift not in course when this
+expression is evaluated what do you think we're gonna get well we don't have
+Swift in this string so not in will return true let's take a look there you
+go so these are the useful string methods
+next we'll look at numbers hi guys thank you for watching this
+tutorial my name is muhammad ani and i have tons of tutorials like this for you
+on my channel so be sure to subscribe and also please like and share this
+video if you want to learn Python properly from scratch with depth I have
+a comprehensive python tutorial for you the link is below this video so click
+the link to get started thank you and have a fantastic day

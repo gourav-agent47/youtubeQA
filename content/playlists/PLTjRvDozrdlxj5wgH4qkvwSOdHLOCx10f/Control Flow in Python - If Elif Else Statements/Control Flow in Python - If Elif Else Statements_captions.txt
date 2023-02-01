@@ -1,0 +1,165 @@
+Title: Control Flow in Python - If Elif Else Statements In almost every program, there are times
+you need to make decisions and that's when you use an if statement here is an
+example let's say we have a variable called temperature we set it to 35 now
+if temperature is greater than 30 perhaps we want to display a message to
+the user so we use an if statement if after if we add a condition which is
+basically a boolean expression an expression that produces a boolean value
+so if temperature is greater than 30 here we have a boolean expression if
+this expression evaluates to true the following statements will be executed
+let me show you now here is the important part that a lot of beginners
+miss when you use an if statement you should always terminate your
+statement with a colon now let's see what happens when I press ENTER our
+cursor is indented so here we have two white spaces this is very important
+because using these indentations Python interpreter will know what statements
+should be executed if this condition is true here we want to print a message
+like it's warm we can print another message as well drink water so we can
+have as many statements as we want here as long as they are indented they belong
+to this if block now when we finish here we should remove indentation to indicate
+the end of this if block so here we can add a print statement with a message
+like done this statement will always be executed whether this condition is true
+or not now note that when I save the changes this indentation you see here is
+going to be doubled up take a look save there you go so when we save the
+changes auto kept eight reformat our code and uses four white spaces for
+indentation so one two three four it uses four white spaces because that's
+what pepp eight recommends alright now let's run this program so because
+temperature is greater than 30 we see the first two
+messages and we see the dawn message regardless so if I change the
+temperature to let's say 15 and run the program one more time
+look this dawn message is executed whether our condition is true or not so
+pay great attention to these indentations that's one of the issues I
+see in beginners code let's say they want both these print statements to be
+executed if the condition is true accidentally they remove the indentation
+on the fourth line and that's why their program doesn't work as they expect so
+be careful about this now what if you want to have multiple conditions we use
+an elephant so L if that is short for else/if here we can add another
+condition another expression so temperature is greater than 20 once
+again : enter a by default here vs code is using
+two white spaces so don't worry about this as soon as you save the changes
+those two white spaces will be converted to four white spaces so let's print a
+different message it's nice save the changes now look all
+these lines are indented consistently you can have as many Elif statements as
+you want and optionally you can also have an else statement so if none of the
+previous conditions are true then what you have in the else block will be
+executed once again we add the colon annotation print here we can add a
+message like it's called saying the changes in this case temperature is 15
+so none of these two conditions will be true and we will see it's called let's
+run the program there you go in this lecture I'm going to show you a
+technique for writing cleaner code so let's say we're building an application
+for university and we want to check to see if the person who's applying for
+this university program is eligible or not so we start by defining a variable
+called age set it to 22 now if H is greater than or equal to 18 colon print
+eligible remove the indentation else colon print not eligible let's run a
+program make sure it works beautiful now there is nothing wrong in this piece of
+code but I want to show you a cleaner way to achieve the same result instead
+of having a print statement here we can define a variable like message and set
+it to this string that is the first step so message equals this string and then
+we will print this message now when you have an if-else statement with this
+structure where you're basically assigning a value to a variable you can
+rewrite this in a simpler way so this is how it works all we want to do over
+these few lines is to assign a value to this message variable right so we start
+with message we set it to eligible if H is greater than or equal to 18 else we
+set it to not eligible this statement is almost like plain
+English so what we have on line 7 is exactly equivalent to these 4 lines of
+code delete save the changes run the program
+you can see this person is eligible if I change the age to 12 and run the program
+we get not eligible so what we have here is called ternary
+operator in Python we have three logical
+operators and we use these operators to model more complex conditions so these
+operators are and or and not let's see a real-world example of using these
+operators so imagine we're building an application for processing loans so we
+need two variables high income we can set this to true and good underline
+credit we set it to true now here's the condition we want to implement if the
+applicant has high income and good credit score then they are eligible for
+the loan so if high income and good credit we add
+the colon and print eligible now note that here I have not compared the value
+of this variable with true that is one of the issues I see in a lot of
+beginners code this is redundant and unprofessional because high income is a
+boolean so it's either true or false we don't need to compare true with true so
+if this condition is true and this second condition is true then we will
+print eligible in the terminal so save the changes and run the program
+obviously this person is eligible however if one of these conditions is
+false we will not see eligible in the terminal so let's add an else statement
+here and print not eligible run the program we see not eligible so this is
+how the and operator works with an operator if both conditions are true the
+result will be true in contrast with the or operator as long as at least one of
+the conditions is true the result will be true so if I replace and with or here
+we should see eligible and the terminal let's run it one more time there you go
+so these are the and an or operator now let's take a look at an example of
+the nut operator so I'm gonna define another variable steel and set it to
+true temporarily I'm gonna remove this expression and simplify it we'll come
+back to this later so let's say if the person is eligible if they are not a
+student the nut operator basically inverses the
+value of a boolean so in this case student is true when we apply the not
+operator the result will be false so in this case our condition will be false
+and that's why this print statement will not be executed let me show you so save
+run the program they are not eligible if student was false when we apply the nut
+operator will get true so our condition will be true and we'll see it eligible
+let's run it one more time there you go with this operators we can model even
+more complex conditions here is an example a person can be eligible if they
+have either high income or good credit and they should not be used to do that
+let me show you how to implement this condition so if high income or good
+credit we want at least one of these conditions to be true so we put these in
+parentheses we want to separate these from the other condition which is not a
+student now the result of this should be true which means at least one of these
+conditions should be true after that we'll add and not student
+and finally caught so we this operators you can model all kinds of real-world
+scenarios so here's the example from the last
+lecture a person is eligible for a loan if they have high income and good credit
+and they are not a student now one thing you need to know about
+these boolean operators is that their short circuit what do we mean by that
+well when python interpreter wants to evaluate this expression it
+starts from the first argument if this is true it continues the evaluation to
+see if the second argument is also true so it continues the evaluation all the
+way to the end of this expression however as soon as one of these
+arguments is false the evaluation stops let me show you what I mean so if I
+change high-income to false when Python interpreter sees this expression it
+starts here it knows that high-income is false so it doesn't matter what comes
+after the result of this entire expression will always be false because
+at least one of the arguments or one of the operands is false this is what we
+call short-circuiting just like the short-circuit concept we have in
+electronics so the evaluation stops as soon as one of these arguments evaluates
+to false we have the same concept with the or operator so if I change these and
+operators to or let's see what happens with the or operator we know that at
+least one of the arguments should be true so the evaluation stops as soon as
+we find an argument that evaluates to true in this case when Python
+interpreter evaluates this expression it sees that high-income is false so it
+continues the evaluation hoping that the next argument will be true here good
+credit is true so evaluation stops and the result of this entire expression
+will be true so in Python logical operators are
+short-circuit in this lecture I'm gonna show you how
+to chain comparison operators this is a very powerful technique for writing
+clean code here is an example let's say we want to implement a rule that says
+age should be between 18 and 65 here's how we can implement it so we define a
+variable like age set it to 22 now if age is greater than or equal to 18 and
+age is less than 65 then we print eligible now here's a question for you
+how do we write this rule in mass we can write it like this well more accurately we should have an
+equal sign here so age should be between 18 and 65 this is how we write this rule
+in math now I've got some good news for you we can write the exact same
+expression in Python so I'm going to move this up put an if
+statement here line 4 and line 3 are exactly equivalent but as you can see
+line 4 is cleaner and easier to read so let's get rid of line 3
+this is what we call chaining comparison operators all right here is a little quiz for you
+I want you to pause the video and think about this quiz for 10 to 20 seconds
+what do you think we'll see on the terminal when we run this program so
+pause the video figure out the answer when you're ready come back continue
+watching all right let's see what happens when we
+run this program first we get this if statement in this case we're comparing
+two different objects for equality and these objects have different types we
+have a number compared for this string so number 10 and string 10 are not equal
+that is why a will not be printed on the terminal so the control moves to the
+Elif part here we have two boolean expressions here's the first one here's
+the second one and they are combined using the logical end so if both these
+expressions are evaluated to true then this entire expression will be true and
+we will see beyond the terminal let's see if both these expressions are
+evaluated to true here's the first part bag is greater than Apple that is true
+because when we sort this words bag comes after Apple but look at the second
+part this expression is evaluated to false because bag is not greater than
+cat so when we applied the logical end between true and false the result will
+be false that is why this statement will not be executed so to control moves to
+the else part and when we run this program the letter C will be printed on
+the terminal hi guys thank you for watching this
+tutorial my name is Mohammad Ani and I have tons of tutorials like this for you
+on my channel so be sure to subscribe and also please like and share this
+video if you want to learn Python properly from scratch with depth I have
+a comprehensive python tutorial for you the link is below this video so click
+the link to get started thank you and have a fantastic day
