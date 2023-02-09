@@ -802,9 +802,11 @@ def result():
             print('#######################')
             print()
 
-        print('SBERT Results took a total of : {} seconds.'.format(time.time()-t))
+        print('Cross Decoder Results took a total of : {} seconds.'.format(time.time()-t))
 
-        return documents[0:3]
+        return documents_lexical[0:3], documents_semantic[0:3] , documents[0:3]
+
+        
 
     ###### long questions #########3
     extract_answers = True
@@ -813,9 +815,9 @@ def result():
  
     print(f"You Searched : {query}\n")
 
-    output = search(query, top_k = 32, index = index, model= sBERT, extract_answers=extract_answers, all_terms_must_match= all_terms_must_match, combine = True)
+    lexical, semantic, cross = search(query, top_k = 32, index = index, model= sBERT, extract_answers=extract_answers, all_terms_must_match= all_terms_must_match, combine = True)
 
-    return render_template('result.html', api= output[0], pid = output[1])
+    return render_template('result.html', lexical=lexical, semantic=semantic, cross=cross)
 
 
 
