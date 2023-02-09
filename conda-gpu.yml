@@ -1,0 +1,16 @@
+name: vs-gpu
+
+dependencies:
+  - python==3.9
+  - pip
+  - matplotlib
+  - opencv
+  - cudnn
+  - cudatoolkit==10.1.243
+  - pip:
+    - opencv-python==4.3.0.38
+    - lxml
+    - tqdm
+    - absl-py
+    - easydict
+    - pillow

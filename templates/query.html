@@ -12,24 +12,24 @@
   </head>
   <body>
     <section class="vh-100" style="background-color: #508bfc;">
-      <div class="container py-10 h-100">
+      <div class="container py-5 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
-          <div class="col-18 col-md-12 col-lg-6 col-xl-5">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
             <div class="card shadow-2-strong" style="border-radius: 1rem;">
               <div class="card-body p-5 text-center">
     
                 <h1 class="mb-5">Youtube QandA</h3>
                   
-                <form action="{{ url_for('query') }}" method=POST>
+                <form action="{{ url_for('result') }}" method=POST>
                   <div class="form-outline mb-4">
-                    <input name ="apikey" type="text" id="APIKey-1" class="form-control form-control-lg" />
-                    <label class="form-label" for="typeEmailX-2">API KEY</label>
+                    <input name ="query" type="text" id="query-1" class="form-control form-control-lg" />
+                    <label class="form-label" for="typeEmailX-2">Enter Your Query</label>
                   </div>
       
-                  <div class="form-outline mb-4">
+                  <!-- <div class="form-outline mb-4">
                     <input name="playlist" type="text" id="PlaylistID-1" class="form-control form-control-lg" />
                     <label class="form-label" for="typePasswordX-2">Playlist ID</label>
-                  </div>
+                  </div> -->
       
                   <button class="btn btn-primary btn-lg btn-block" type="submit">Render</button>
                   
