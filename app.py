@@ -385,9 +385,9 @@ def query():
                 bulk_index_documents(documents_to_index, request_timeout=300, refresh = refresh_type)
                 documents_to_index = []
 
-            if documents_to_index:
-                logging.info(f'Indexing {len(documents_to_index)} documents')
-                bulk_index_documents(documents_to_index, request_timeout=300, refresh = refresh_type)
+        if documents_to_index:
+            logging.info(f'Indexing {len(documents_to_index)} documents')
+            bulk_index_documents(documents_to_index, request_timeout=300, refresh = refresh_type)
 
     def clear_indices(index_name = ''):
         
@@ -413,90 +413,6 @@ def query():
 
         # Constructing the query for the default BM25 retriever
 
-    def construct_query(query, top_k, filters = None, all_terms_must_match = False):
-
-        # We choose if all terms must match or not (this can be used to enforce more strict rules)
-        operator = "AND" if all_terms_must_match else "OR"
-
-    # There are multiple options for keyword based serach such as:
-    # -> match: It directly matches all the keywords in any order
-    # -> match_phrase: It directly matches all the keywords in specific order( so that sentences are bound to make sense)
-    # -> multi_match: It directly matches all the keywords in any order but can match on multiple fields
-
-        body = {
-            "size": str(top_k),
-            "query": {
-                "bool": {
-                    "must": [
-                        {
-                            "multi_match": {
-                                "query": query,
-                                "fields": ["content", "title"],
-                                "operator": operator,
-                            }
-                        }
-                    ]
-                }
-            }
-        }
-
-        return body
-
-
-    # This constructs query for dense retrieval using various scores
-    def construct_query_dense(query_vector, top_k, similarity = "cosinse"):
-
-        if similarity == "cosine":
-            similarity_fn_name = "cosineSimilarity"
-        elif similarity == "dot_product":
-            similarity_fn_name = "dotProduct"
-        elif similarity == "12":
-            similarity_fn_name = "12norm"
-        else:
-            raise Exception(
-                "Invalid value for similarity in ElasticSearchDocumentStore\nChoose between 'cosine', 'dot_product', and '12"
-            )
-        
-        logging.info(f'Using the following similarity metric : {similarity}')
-
-        if (type(query_vector) == np.ndarray):
-            query_vector = query_vector.tolist()
-        
-        logging.info(f'The type of query vector is: {type(query_vector)}')
-
-        body = {
-            "size": str(top_k),
-            "query": {
-                "script_score": {
-                    "query": {
-                        "match_all": {}
-                    },
-                    "script": {
-                        "source": f"{similarity_fn_name}(params.query_vector, 'embedding') + 1.0",
-                        "params": {"query_vector": query_vector}
-                    }
-                }
-            }
-        }
-
-        return body
-
-
-    # This function processes the hit results obtained after elastic search
-    def convert_es_dict(es_dict, return_embedding = False, scale_score = None):
-
-        meta_data = {k : v for k,v in es_dict['_source'].items() if k not in ('title', 'content', 'language', 'hash_id', 'embedding')}
-
-        # calculate score if using embedding retreival
-        score = es_dict['_score']
-
-        # check if name field is present or not
-        if es_dict['_source']['title'] is not None:
-            title = es_dict['_source']['title']
-
-        document = Document(title = title, content = es_dict['_source']['content'], language = es_dict['_source']['language'], meta = meta_data, score = score, hash_id = es_dict['_source']['hash_id'])
-        return document
-
 
     ################## creating dense index ################33
 
@@ -512,17 +428,19 @@ def query():
     sBERT = SentenceTransformer('msmarco-distilbert-base-dot-prod-v3')
 
     sBERT.max_seq_length = 512
+    print('starting encoding')
+    encoded_data = sBERT.encode([doc.content for doc in documents_dense])
+    print('encoding done')
 
-    encoded_data = sBERT.encode([doc.content for doc in documents_dense[0:10]])
-
-    for i, doc in enumerate(documents_dense[0:10]):
+    for i, doc in enumerate(documents_dense):
         doc.embedding = encoded_data[i]
-
-    index_documents(documents_dense[0:10], index = 'document_dense', batch_size = 1000)
+    print('starting indexing')
+    index_documents(documents_dense, index = 'document_dense', batch_size = 1000)
+    print('indexing done')
 
 
     ### final return statement###
-    return render_template('query.html', api= API_KEY, pid = PLAYLIST_ID)
+    return render_template('query.html')
 
 
 
